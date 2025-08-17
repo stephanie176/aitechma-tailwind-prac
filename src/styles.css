@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-blue: #0089bf;
+  --color-secondary-blue: #403e57;
+  --color-main-dark: #14151c;
+  --color-secondary-dark: #1d1e29;
+  --color-gold-accent: #e0b831;
+  --color-primary-red: #7e1522;
+  --color-primary-green: #8fe33b;
+  --color-secondary-green: #3b5027;
+}
+
+input[type='email'], input[type='password'] {
+  @apply px-3 py-3 border border-gray-400 rounded-sm w-full;
+}
+
+.signin-btn {
+  @apply w-full rounded-sm py-3 cursor-pointer hover:bg-secondary-blue;
+}
