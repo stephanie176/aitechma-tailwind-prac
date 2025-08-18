@@ -6,7 +6,38 @@
   <link rel="stylesheet" href="styles.css">
   <title>Reset password - aitechma</title>
 </head>
-<body>
-  
+<body class="relative">
+  <div class="h-dvh w-full grid grid-cols-12 gap-2">
+    <div class="col-span-7 bg-white"></div>
+    <div class="col-span-5 md:bg-primary-blue"></div>
+  </div>
+  <div class="absolute top-0 left-0 h-dvh w-full">
+    <div class="container md:flex md:flex-row md:justify-between md:items-center md:p-20 p-10 space-x-20 transition:0.5s items-center justify-center">
+      <div class="md:w-1/2 w-full">
+        <div class="text-center py-8">
+          <h1 class="md:text-4xl text-3xl font-semibold">Reset your Password</h1>
+        </div>
+        <div>
+          <form class="space-y-6">
+            <div class="flex flex-col space-y-4">
+              <label for="password">New Password</label>
+              <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="flex flex-col space-y-4">
+              <label for="password">Confirm New Password</label>
+              <div class="input-group">
+                <input type="password" id="password" placeholder="Enter your password">
+                <span></span>
+              </div>
+            </div>
+            <button type="submit" class="signin-btn bg-primary-blue text-white"><a href="index.html">Save New Password</a></button>
+          </form>
+        </div>
+      </div>
+      <div class="hidden md:flex md:w-1/2">
+        <img src="images/Group 590.png" alt="">
+      </div>
+    </div>
+  </div>
 </body>
 </html>
