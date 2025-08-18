@@ -71,13 +71,21 @@ p {
 }
 
 .gold-accent-btn {
-  @apply p-1 bg-main-dark text-gold-accent hover:border hover:border-gold-accent rounded-md hover:bg-gold-accent hover:text-main-dark cursor-pointer transition duration-200;
+  @apply px-2 py-1 bg-main-dark text-gold-accent border border-gold-accent rounded-md hover:bg-gold-accent hover:text-main-dark cursor-pointer transition duration-200;
 }
 
-td, th {
-  @apply p-3;
+td {
+  @apply p-2;
+}
+
+th {
+  @apply p-1;
+}
+
+tr:nth-child(odd) {
+  @apply bg-primary-gray;
 }
 
 tr:nth-child(even) {
-  @apply bg-primary-gray;
+  @apply bg-secondary-dark;
 }

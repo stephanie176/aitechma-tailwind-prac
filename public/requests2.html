@@ -52,16 +52,16 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
           </svg>
         </button>
-        <div id="dropdownMenu" class="hidden divide-y divide-gray-100 rounded-lg shadow w-40 bg-secondary-dark">
+        <div id="dropdownMenu" class="hidden divide-y divide-gray-100 rounded-lg shadow w-40">
           <ul class="py-2 text-[9px] text-gray-700">
             <li>
-              <div class="px-4 py-2 hover:bg-gray-700 cursor-pointer">
+              <div class="px-4 py-2 hover:bg-gray-400 cursor-pointer">
                 <p class="font-semibold">Item 1</p>
                 <p class="text-[9px] text-gray-500">Extra detail</p>
               </div>
             </li>
             <li>
-              <div class="px-4 py-2 hover:bg-gray-700 cursor-pointer">
+              <div class="px-4 py-2 hover:bg-gray-400 cursor-pointer">
                 <p class="font-semibold">Item 2</p>
                 <p class="text-[9px] text-gray-500">Extra detail</p>
               </div>
@@ -72,13 +72,13 @@
     </div>
 
     <!-- main content -->
-    <div class="z-10 rounded-md p-6 space-y-4 text-gray-200 overflow-y-auto">
+    <div class="z-10 rounded-md p-[2vh] space-y-[2vh] text-gray-200 h-[80vh] overflow-y-auto">
     <!-- talent requests -->
     <div>
       <h2 class="text-2xl tyms">Talent Requests</h2>
     </div>
     <!-- search and filter bar -->
-    <div class="container w-full flex items-center space-x-10">
+    <div class="container flex items-center space-x-10">
       <div class="w-3/4">
         <form class="mx-auto">   
           <div class="relative">
@@ -87,7 +87,7 @@
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
               </svg>
             </div>
-            <input type="search" id="search" class="block w-full ps-10 text-sm bg-search-bar text-gray-300 border border-secondary-gray rounded-lg focus:ring-gold-accent focus:border-gold-accent-200" placeholder="Search by title">
+            <input type="search" id="search" class="block w-[50vh] ps-[2vh] text-[1.5vh] bg-search-bar text-gray-300 border border-secondary-gray rounded-lg focus:ring-gold-accent focus:border-gold-accent-200" placeholder="Search by title">
           </div>
         </form>
       </div>
@@ -102,13 +102,13 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
               </svg>
             </button>
-            <div id="filter" class="hidden divide-y divide-gray-100 rounded-lg shadow w-24 bg-secondary-dark">
+            <div id="filter" class="hidden divide-y divide-gray-100 rounded-lg shadow w-14">
               <ul class="py-2">
-                <li class="cursor-pointer text-gray-500 ">
-                  <p class="p-1 hover:bg-gray-700">something</p>
+                <li class="hover:bg-secondary-dark cursor-pointer">
+                  <p class="p-1">something</p>
                 </li>
-                <li class="cursor-pointer text-gray-500">
-                  <p class="p-1 hover:bg-gray-700">something</p>
+                <li class="hover:bg-secondary-dark cursor-pointer">
+                  <p class="p-1">something</p>
                 </li>
               </ul>
             </div>
@@ -122,7 +122,7 @@
 
     <!-- table -->
     <div class="container">
-      <table class="table-auto border-collapse border border-secondary-gray text-left text-[15px] w-full rounded-md">
+      <table class="table-auto border-collapse border border-secondary-gray text-left text-[1.5vh] w-[95vh]">
         <tr class="border border-secondary-gray bg-secondary-gray">
           <th>S/N</th>
           <th>Title</th>
@@ -231,10 +231,10 @@
           </button>
           <div id="entries" class="hidden divide-y divide-gray-100 rounded-lg shadow w-14">
             <ul class="py-2">
-              <li class="hover:bg-gray-700 cursor-pointer">
+              <li class="hover:bg-secondary-dark cursor-pointer">
                 <p class="p-1">5</p>
               </li>
-              <li class="hover:bg-gray-700 cursor-pointer">
+              <li class="hover:bg-secondary-dark cursor-pointer">
                 <p class="p-1">6</p>
               </li>
             </ul>
