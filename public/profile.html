@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Dashboard - aitechma</title>
+</head>
+<body class="bg-main-dark relative flex text-gray-400">
+  <!-- side nav bar -->
+  <aside class="bg-secondary-dark h-dvh p-3 pt-16 flex flex-col justify-between"> 
+    <!-- main nav -->
+    <nav>
+      <ul class="space-y-4">
+        <li><a href="dashboard.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+          <i class="fa-solid fa-grip text-gold-accent"></i>
+        </div><span class="text-[10px]">Home</span></a></li>
+        <li><a href="requests.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+          <i class="fa-solid fa-file-arrow-down">
+        </div></i><span class="text-[10px]">Requests</span></a></li>
+        <li><a href="interviews.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+          <i class="fa-solid fa-comment"></i>
+        </div><span class="text-[10px]">Interviews</span></a></li>
+        <li><a href="#" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+          <i class="fa-solid fa-envelopes-bulk">
+        </div></i><span class="text-[10px]">Offers</span></a></li>
+        <li><a href="#" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+          <i class="fa-solid fa-calendar"></i>
+        </div><span class="text-[10px]">Bills</span></a></li>
+      </ul>
+    </nav>
+    <!-- lower nav -->
+    <div class="text-gray-400 flex flex-col items-center space-y-4">
+      <a href="#"><span><i class="fa-solid fa-gear"></i></span></a>
+      <a href="#"><span><i class="fa-solid fa-circle-question"></i></span></a>
+    </div>
+  </aside>
+  <section class="w-full">
+    <!-- content -->
+    <div>
+      <!-- head nav -->
+      <div class="bg-secondary-dark flex justify-between">
+        <a href="dashboard.html"><img src="images/logo.png" alt=""></a>
+        <!-- profile -->
+        <div class="text-stone-400 flex items-center">
+          <img src="images/profile.png" alt="" class="h-10 cursor-pointer">
+          <!-- dropdown -->
+          <button id="dropdownButton" data-dropdown-toggle="dropdownMenu" class="px-4 py-2 flex items-center w-40 cursor-pointer">
+            <span class="flex flex-col text-[9px]"><p>Tyms Africa</p><p>Tech Employer</p></span>
+            <svg class="w-4 h-4 ml-2 transition-transform duration-200" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div id="dropdownMenu" class="hidden divide-y divide-gray-100 rounded-lg shadow w-40">
+            <ul class="py-2 text-[9px] text-gray-700">
+              <li>
+                <div class="px-4 py-2 hover:bg-gray-400 cursor-pointer">
+                  <p class="font-semibold">Item 1</p>
+                  <p class="text-[9px] text-gray-500">Extra detail</p>
+                </div>
+              </li>
+              <li>
+                <div class="px-4 py-2 hover:bg-gray-400 cursor-pointer">
+                  <p class="font-semibold">Item 2</p>
+                  <p class="text-[9px] text-gray-500">Extra detail</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- main content -->
+      <div class="z-10 rounded-md text-gray-100 p-5 space-y-4">
+        <div>
+          <ul>
+            <li><a href="dashboard.html">Home</a></li>
+            <li>/</li>
+            <li>Muhammed Adepoju</li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <div>
+              <img src="" alt="">
+              <div></div>
+            </div>
+            <div>
+              <h3>Muhammed Adepoju</h3>
+              <p>Product Designer</p>
+            </div>
+          </div>
+          <button>Shortlist for interview</button>
+        </div>
+        <div>
+          <div class="">
+            <h4>Work Nature</h4>
+            <div>
+              <div>
+                <div>
+                  <p>Job Type interest</p>
+                  <p>Full time</p>
+                </div>
+                <div>
+                  <p>Work Mode</p>
+                  <p>Remote</p>
+                </div>
+              </div>
+              <div>
+                <p>Available in</p>
+                <div>
+                  <div><p><span></span>United Kingdom</p></div>
+                  <div><p><span></span>Canada</p></div>
+                  <div><p><span></span>Australia</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <h4>Work Enumeration</h4>
+            <div>
+              <div>
+                <div>
+                  <p>Earning Schedule</p>
+                  <p>Weekly</p>
+                </div>
+                <div>
+                  <p>Preferred Currency</p>
+                  <p>USD (United States Dollar)</p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <p>Min. Rate</p>
+                  <p>$6,000</p>
+                </div>
+                <div>
+                  <p>Max. Rate</p>
+                  <p>$10,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <h4>Skills</h4>
+            <div>
+              <div>
+                <div>
+                  <p>Specialisation</p>
+                  <p>Frontend development</p>
+                </div>
+                <div>
+                  <p>Seniority Level</p>
+                  <p>Mid-Level</p>
+                </div>
+                <div>
+                  <p>First Earning</p>
+                  <p>2011</p>
+                </div>
+              </div>
+              <div>
+                <p>Stack</p>
+                <div>
+                  <div><p>PHP</p></div>
+                  <div><p>FIGMA</p></div>
+                  <div><p>NodeJS</p></div>
+                  <div><p>C#</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- work experience -->
+          <div>
+            <h2>Work Experience</h2>
+            <div>
+              <div><span></span></div>
+              <div>
+                <h2>Google Africa</h2>
+                <p>Frontend Developer</p>
+                <p>Feb 2023 - Present</p>
+                <p>Skills:Figma <span>&middot;</span> Software development</p>
+                <p>Design and produce visually appealing graphics, and illustrations for digital and print media, including but not limited to social media posts</p>
+              </div>
+            </div>
+            <div>
+              <div><span></span></div>
+              <div>
+                <h2>Google Africa</h2>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- remember to add scrolling for links -->
+          <!-- links -->
+          <div>
+            <h4>Links</h4>
+            <div>
+              <p>LinkedIn profile</p>
+              <div><a href="#"><span></span>https://tailwindcss.com/docs/installation/tailwind-cli</a></div>
+            </div>
+            <div>
+              <p>Public link to CV</p>
+              <div><a href="#"><span></span>https://tailwindcss.com/docs/installation/tailwind-cli</a></div>
+            </div>
+            <div>
+              <p>Top 3 Portfolios</p>
+              <div><a href="#"><span></span>https://tailwindcss.com/docs/installation/tailwind-cli</a></div>
+              <div><a href="#"><span></span>https://tailwindcss.com/docs/installation/tailwind-cli</a></div>
+              <div><a href="#"><span></span>https://tailwindcss.com/docs/installation/tailwind-cli</a></div>
+            </div>
+            <div>
+              <p>Top 3 Online Articles</p>
+              <div><a href="#"><span></span>https://tailwindcss.com/docs/installation/tailwind-cli</a></div>
+              <div><a href="#"><span></span>https://tailwindcss.com/docs/installation/tailwind-cli</a></div>
+              <div><a href="#"><span></span>https://tailwindcss.com/docs/installation/tailwind-cli</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.js"></script>
+</body>
+</html>

@@ -6,43 +6,45 @@
   <link rel="stylesheet" href="styles.css">
   <title>Login - aitechma</title>
 </head>
-<body class="relative">
+<body class="relative overflow-hidden">
   <div class="h-dvh w-full grid grid-cols-12 gap-2">
-    <div class="col-span-7 bg-white"></div>
-    <div class="col-span-5 md:bg-primary-blue"></div>
+    <div class="col-span-8 bg-white"></div>
+    <div class="col-span-4 md:bg-primary-blue"></div>
   </div>
-  <div class="absolute top-0 left-0 h-dvh w-full">
-    <div class="container md:flex md:flex-row md:justify-between md:items-center md:p-20 p-10 space-x-20 transition:0.5s items-center justify-center">
+  <div class="absolute top-0 left-0 h-dvh w-full md:px-8">
+    <div class="container md:flex md:flex-row md:justify-between md:items-center p-10 space-x-20 transition:0.5s items-center justify-center">
       <div class="md:w-1/2 w-full">
         <div class="text-center py-8">
           <h1 class="md:text-4xl text-3xl font-semibold">Welcome to your space</h1>
           <p class="text-[min(18px)]">Login to your account and keep record of all sales</p>
         </div>
-        <div>
+        <div class="pt-5">
           <form class="space-y-6">
             <div class="flex flex-col space-y-4">
               <label for="email">Email</label>
-              <input type="email" id="email" placeholder="Enter your email address">
+              <input type="email" id="email" placeholder="Enter your email address" required>
             </div>
             <div class="flex flex-col space-y-4">
               <label for="password">Enter your Password</label>
               <div class="input-group">
-                <input type="password" id="password" placeholder="Enter your password">
+                <input type="password" id="password" placeholder="Enter your password" required>
                 <span></span>
               </div>
             </div>
             <div class="space-y-2 md:flex md:justify-between">
               <div>
                 <input type="checkbox" id="remember-me">
-              <label for="remember-me">Remember me?</label>
+                <label for="remember-me">Remember me?</label>
               </div>
               <a href="forgot.html" class="text-primary-blue hover:text-secondary-blue">Forgot Password?</a>
             </div>
-            <button type="submit" class="signin-btn bg-primary-blue text-white"><a href="./dashboard.html">Login</a></button>
+            <button class="signin-btn mt-6 h-full">
+              <a href="dashboard.html" class="block w-full h-full">Login</a>
+            </button>
           </form>
         </div>
       </div>
-      <div class="hidden md:flex md:w-1/2">
+      <div class="hidden md:flex md:w-1/2 w-full">
         <img src="images/undraw_window_shopping_re_0kbm 1(1).png" alt="">
       </div>
     </div>

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <title>Dashboard - aitechma</title>
 </head>
-<body class="bg-main-dark relative flex">
+<body class="bg-main-dark relative flex text-gray-400">
   <!-- side nav bar -->
   <aside class="bg-secondary-dark h-dvh p-3 pt-16 flex flex-col justify-between"> 
     <!-- main nav -->
@@ -36,6 +36,7 @@
       <a href="#"><span><i class="fa-solid fa-circle-question"></i></span></a>
     </div>
   </aside>
+
   <section class="w-full">
     <!-- content -->
     <div>
@@ -43,10 +44,10 @@
       <div class="bg-secondary-dark flex justify-between">
         <a href="dashboard.html"><img src="images/logo.png" alt=""></a>
         <!-- profile -->
-        <div class="text-stone-400 flex items-center">
+        <div class="text-gray-400 flex items-center">
           <img src="images/profile.png" alt="" class="h-10 cursor-pointer">
           <!-- dropdown -->
-          <button id="dropdownButton" data-dropdown-toggle="dropdownMenu" class="px-4 py-2 flex items-center w-40 cursor-pointer">
+          <button id="dropdownButton" data-dropdown-toggle="dropdownMenu" class="px-4 py-2 flex items-center w-32 cursor-pointer">
             <span class="flex flex-col text-[9px]"><p>Tyms Africa</p><p>Tech Employer</p></span>
             <svg class="w-4 h-4 ml-2 transition-transform duration-200" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -72,8 +73,204 @@
       </div>
 
       <!-- main content -->
-      <div class="z-10 rounded-md border-amber-50">
-        
+      <div class="z-10 rounded-md p-6 space-y-4">
+        <div>
+          <h1>Interviews</h1>
+        </div>
+        <div>
+          <ul>
+            <li>Talent Interviews</li>
+            <li>Calendar</li>
+          </ul>
+        </div>
+        <div class="flex">
+          <div>
+            <form class="max-w-md mx-auto">   
+              <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+              <div class="relative">
+                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                  <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                  </svg>
+                </div>
+                <input type="search" id="search" class="block w-full ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search by title" required />
+              </div>
+            </form>
+          </div>
+          <div class="flex items-baseline">
+            <p>Filter by:</p>
+            <!-- dropdown -->
+            <div class="text-[14px] text-gray-400">
+              <button id="dropdownButton" data-dropdown-toggle="filter" class="px-3 py-1 flex items-center w-14 cursor-pointer">
+                <span class="flex flex-col">All</span>
+                <svg class="w-4 h-4 ml-2 transition-transform duration-200" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+              <div id="filter" class="hidden divide-y divide-gray-100 rounded-lg shadow w-14">
+                <ul class="py-2">
+                  <li class="hover:bg-secondary-dark cursor-pointer">
+                    <p class="p-1">something</p>
+                  </li>
+                  <li class="hover:bg-secondary-dark cursor-pointer">
+                    <p class="p-1">something</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <table>
+            <tr>
+              <th>S/N</th>
+              <th>Talent</th>
+              <th>Request Title</th>
+              <th>Status</th>
+              <th>Scheduled Date</th>
+              <th>Scheduled Time</th>
+              <th>Actions</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>
+                <img src="" alt="">
+                <div>
+                  <p>Muhammed Adepoju</p>
+                  <p>Product Designer</p>
+                </div>
+              </td>
+              <td>Designer</td>
+              <td>
+                <button><span></span>Accepted</button>
+              </td>
+              <td>24 January 2023</td>
+              <td>09:00 - 09:30</td>
+              <td>
+                <button>Cancel</button>
+                <button>Reschedule</button>
+                <span></span>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <img src="" alt="">
+                <div>
+                  <p>Solomon James</p>
+                  <p>Frontend Developer</p>
+                </div>
+              </td>
+              <td>Engineer</td>
+              <td>
+                <button><span></span>Completed</button>
+              </td>
+              <td>24 January 2023</td>
+              <td>09:00 - 09:30</td>
+              <td>
+                <button>Send Rejection</button>
+                <button>Make Offer</button>
+                <span></span>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <img src="" alt="">
+                <div>
+                  <p>Janet Mike</p>
+                  <p>Data Analyst</p>
+                </div>
+              </td>
+              <td>Data Analyst</td>
+              <td>
+                <button><span></span>Rejected</button>
+              </td>
+              <td>24 January 2023</td>
+              <td>09:00 - 09:30</td>
+              <td>
+                <button>Send Rejection</button>
+                <button>Make Offer</button>
+                <span></span>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>
+                <img src="" alt="">
+                <div>
+                  <p>Sarah Adigun</p>
+                  <p>Visual Designer</p>
+                </div>
+              </td>
+              <td>Designer</td>
+              <td>
+                <button><span></span>Pending</button>
+              </td>
+              <td>24 January 2023</td>
+              <td>09:00 - 09:30</td>
+              <td>
+                <button>Cancel</button>
+                <button>Reschedule</button>
+                <span></span>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>
+                <img src="" alt="">
+                <div>
+                  <p>Ajanlekoko Mike</p>
+                  <p>Backend Engineer</p>
+                </div>
+              </td>
+              <td>Engineer</td>
+              <td>
+                <button><span></span>Cancelled</button>
+              </td>
+              <td>24 January 2023</td>
+              <td>09:00 - 09:30</td>
+              <td>
+                <button>Cancel</button>
+                <button>Reschedule</button>
+                <span></span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <div class="flex items-baseline space-x-2">
+            <p>Page you are on</p>
+            <input type="text" id="pages" class="bg-secondary-gray border text-gray-400 text-sm rounded-sm focus:ring-0 focus:outline-none focus:border-gray-400 px-2.5 w-8 h-8" value="1">
+            <p>of 1</p>
+            <div>
+              <button><span></span></button>
+              <button><span></span></button>
+            </div>
+          </div>
+          <div class="flex items-baseline">
+            <p>Entries per page:</p>
+           <!-- dropdown -->
+            <div class="text-[14px] text-gray-400">
+              <button id="dropdownButton" data-dropdown-toggle="entries" class="px-3 py-1 flex items-center w-14 cursor-pointer">
+                <span class="flex flex-col">4</span>
+                <svg class="w-4 h-4 ml-2 transition-transform duration-200" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+              <div id="entries" class="hidden divide-y divide-gray-100 rounded-lg shadow w-14">
+                <ul class="py-2">
+                  <li class="hover:bg-secondary-dark cursor-pointer">
+                    <p class="p-1">5</p>
+                  </li>
+                  <li class="hover:bg-secondary-dark cursor-pointer">
+                    <p class="p-1">6</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

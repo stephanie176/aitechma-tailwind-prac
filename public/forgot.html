@@ -8,8 +8,8 @@
 </head>
 <body class="relative">
   <div class="h-dvh w-full grid grid-cols-12 gap-2">
-    <div class="col-span-7 bg-white"></div>
-    <div class="col-span-5 md:bg-primary-blue"></div>
+    <div class="col-span-8 bg-white"></div>
+    <div class="col-span-4 md:bg-primary-blue"></div>
   </div>
   <div class="absolute top-0 left-0 h-dvh w-full">
     <div class="container md:flex md:flex-row md:justify-between md:items-center md:p-16 p-10 space-x-20 transition:0.5s items-center justify-center">
@@ -21,14 +21,14 @@
         <form class="space-y-6">
           <div class="flex flex-col space-y-4">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email address">
+            <input type="email" id="email" placeholder="Enter your email address" required>
           </div>
-          <button type="submit" class="signin-btn bg-primary-blue text-white mt-6">
-            <a href="reset.html">Send Reset Link</a>
+          <button type="submit" class="signin-btn mt-6">
+            <a href="reset.html" class="block w-full h-full">Send Reset Link</a>
           </button>
         </form>
       </div>
-      <div class="hidden md:flex md:w-1/2">
+      <div class="hidden md:flex md:w-1/2 w-full">
         <img src="images/Group 590.png" alt="">
       </div>
     </div>
