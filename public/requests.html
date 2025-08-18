@@ -9,22 +9,22 @@
 </head>
 <body class="bg-main-dark relative flex text-gray-400">
   <!-- side nav bar -->
-  <aside class="bg-secondary-dark h-dvh p-3 pt-16 flex flex-col justify-between"> 
+  <aside class="bg-secondary-dark h-dvh p-2 pt-16 flex flex-col justify-between"> 
     <!-- main nav -->
     <nav>
       <ul class="space-y-4">
         <li><a href="dashboard.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-          <i class="fa-solid fa-grip"></i>
+          <i class="fa-solid fa-grip text-gold-accent"></i>
         </div><span class="text-[10px]">Home</span></a></li>
         <li><a href="requests.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-          <i class="fa-solid fa-file-arrow-down text-gold-accent"></i>
+          <i class="fa-solid fa-file-arrow-down"></i>
         </div><span class="text-[10px]">Requests</span></a></li>
         <li><a href="interviews.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
           <i class="fa-solid fa-comment"></i>
         </div><span class="text-[10px]">Interviews</span></a></li>
         <li><a href="#" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-          <i class="fa-solid fa-envelopes-bulk"></i>
-        </div><span class="text-[10px]">Offers</span></a></li>
+          <i class="fa-solid fa-envelopes-bulk">
+        </div></i><span class="text-[10px]">Offers</span></a></li>
         <li><a href="#" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
           <i class="fa-solid fa-calendar"></i>
         </div><span class="text-[10px]">Bills</span></a></li>
@@ -32,8 +32,8 @@
     </nav>
     <!-- lower nav -->
     <div class="text-gray-400 flex flex-col items-center space-y-4">
-      <a href="#"><span><i class="fa-solid fa-gear"></i></span></a>
-      <a href="#"><span><i class="fa-solid fa-circle-question"></i></span></a>
+      <a href="#"><span><i class="fa-solid fa-gear text-[18px]"></i></span></a>
+      <a href="#"><span><i class="fa-solid fa-circle-question text-[18px]"></i></span></a>
     </div>
   </aside>
 
@@ -72,26 +72,26 @@
     </div>
 
     <!-- main content -->
-    <div class="z-10 rounded-md p-6 space-y-4 text-gray-200 overflow-y-auto">
+    <div class="rounded-md p-6 space-y-4 text-gray-200">
     <!-- talent requests -->
     <div>
-      <h2 class="text-2xl tyms">Talent Requests</h2>
+      <h2 class="text-xl tyms">Talent Requests</h2>
     </div>
     <!-- search and filter bar -->
-    <div class="container w-full flex items-center space-x-10">
-      <div class="w-3/4">
-        <form class="mx-auto">   
+    <div class="w-full md:flex items-center space-x-10">
+      <div class="md:w-3/4">
+        <form class="mx-auto">
           <div class="relative">
             <div class="absolute inset-y-0 start-0 flex items-center ps-3">
               <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
               </svg>
             </div>
-            <input type="search" id="search" class="block w-full ps-10 text-sm bg-search-bar text-gray-300 border border-secondary-gray rounded-lg focus:ring-gold-accent focus:border-gold-accent-200" placeholder="Search by title">
+            <input type="search" id="search" class="w-full ps-10 text-sm bg-search-bar text-gray-300 border border-secondary-gray rounded-lg focus:ring-gold-accent focus:border-gold-accent-200" placeholder="Search by title">
           </div>
         </form>
       </div>
-      <div class="w-1/4 flex space-x-4 items-center">
+      <div class="md:w-1/4 flex space-x-4 items-center mt-3">
         <div class="flex items-baseline">
           <p>Filter by:</p>
           <!-- dropdown -->
@@ -121,8 +121,8 @@
     </div>
 
     <!-- table -->
-    <div class="container">
-      <table class="table-auto border-collapse border border-secondary-gray text-left text-[15px] w-full rounded-md">
+    <div class="mx-auto overflow-y-auto rounded-md border border-secondary-gray">
+      <table class="table-auto border-collapse text-left text-[14px] w-full">
         <tr class="border border-secondary-gray bg-secondary-gray">
           <th>S/N</th>
           <th>Title</th>
@@ -149,8 +149,8 @@
           <td>Weekly</td>
           <td>$100,000</td>
           <td>$120,000</td>
-          <td>
-            <span></span>
+          <td class="flex">
+            <span class="text-gold-accent text-xl"><i class="fa-solid fa-pen-to-square"></i></span>
             <button class="gold-accent-btn">Recommendations</button>
           </td>
         </tr>
@@ -166,8 +166,8 @@
           <td>Weekly</td>
           <td>$100,000</td>
           <td>$120,000</td>
-          <td>
-            <span></span>
+          <td class="flex">
+            <span class="text-gold-accent text-xl"><i class="fa-solid fa-pen-to-square"></i></span>
             <button class="gold-accent-btn">Recommendations</button>
           </td>
         </tr>
@@ -183,8 +183,8 @@
           <td>Weekly</td>
           <td>$100,000</td>
           <td>$120,000</td>
-          <td>
-            <span></span>
+          <td class="flex">
+            <span class="text-gold-accent text-xl"><i class="fa-solid fa-pen-to-square"></i></span>
             <button class="gold-accent-btn">Recommendations</button>
           </td>
         </tr>
@@ -200,8 +200,8 @@
           <td>Weekly</td>
           <td>$100,000</td>
           <td>$120,000</td>
-          <td>
-            <span></span>
+          <td class="flex">
+            <span class="text-gold-accent text-xl"><i class="fa-solid fa-pen-to-square"></i></span>
             <button class="gold-accent-btn">Recommendations</button>
           </td>
         </tr>
@@ -209,14 +209,14 @@
     </div>
 
     <!-- pagination -->
-    <div class="flex justify-between container">
+    <div class="flex mx-auto md:flex-row flex-col space-y-2 justify-between">
       <div class="flex items-center space-x-3">
         <p>Page you are on</p>
         <input type="text" id="pages" class="bg-secondary-gray border text-gray-400 text-sm rounded-sm focus:ring-0 focus:outline-none focus:border-gray-400 px-2.5 w-8 h-8" value="1">
         <p>of 1</p>
-        <div>
-          <button><span></span></button>
-          <button><span></span></button>
+        <div class="-space-x-1">
+          <button class="bg-secondary-gray py-1 px-1.5"><a href="#"><i class="fa-solid fa-chevron-left text-gray-500"></i></a></button>
+          <button class="bg-stone-500 py-1 px-1.5"><a href="#"><i class="fa-solid fa-chevron-right text-gray-200"></i></a></button>
         </div>
       </div>
       <div class="flex">

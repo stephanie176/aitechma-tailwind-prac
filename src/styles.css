@@ -79,7 +79,7 @@ td {
 }
 
 th {
-  @apply p-1;
+  @apply px-2 py-1 font-normal;
 }
 
 tr:nth-child(odd) {

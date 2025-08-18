@@ -784,6 +784,9 @@
   .m-361 {
     margin: calc(var(--spacing) * 361);
   }
+  .m-auto {
+    margin: auto;
+  }
   .-mx-1 {
     margin-inline: calc(var(--spacing) * -1);
   }
@@ -828,6 +831,9 @@
   }
   .my-12 {
     margin-block: calc(var(--spacing) * 12);
+  }
+  .my-auto {
+    margin-block: auto;
   }
   .-ms-1 {
     margin-inline-start: calc(var(--spacing) * -1);
@@ -921,6 +927,12 @@
   }
   .-mr-1 {
     margin-right: calc(var(--spacing) * -1);
+  }
+  .-mr-2 {
+    margin-right: calc(var(--spacing) * -2);
+  }
+  .-mr-8 {
+    margin-right: calc(var(--spacing) * -8);
   }
   .mr-1 {
     margin-right: calc(var(--spacing) * 1);
@@ -1129,6 +1141,9 @@
   .max-h-72 {
     max-height: calc(var(--spacing) * 72);
   }
+  .max-h-80 {
+    max-height: calc(var(--spacing) * 80);
+  }
   .max-h-full {
     max-height: 100%;
   }
@@ -1233,6 +1248,9 @@
   }
   .w-auto {
     width: auto;
+  }
+  .w-dvw {
+    width: 100dvw;
   }
   .w-full {
     width: 100%;
@@ -1474,6 +1492,9 @@
   .justify-start {
     justify-content: flex-start;
   }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
+  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
@@ -1522,6 +1543,20 @@
       margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .space-y-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-3\.5 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 3.5) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 3.5) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .space-y-4 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -1549,11 +1584,46 @@
   .gap-x-16 {
     column-gap: calc(var(--spacing) * 16);
   }
+  .-space-x-0 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * -0) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * -0) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .-space-x-0\.5 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * -0.5) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * -0.5) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .-space-x-1 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * -1) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * -1) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .-space-x-2 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
       margin-inline-start: calc(calc(var(--spacing) * -2) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * -2) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .-space-x-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * -4) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * -4) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .-space-x-11 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * -11) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * -11) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
   .space-x-0 {
@@ -1632,6 +1702,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+  .overflow-auto {
+    overflow: auto;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -1851,6 +1924,10 @@
   .border-dashed {
     --tw-border-style: dashed;
     border-style: dashed;
+  }
+  .border-none {
+    --tw-border-style: none;
+    border-style: none;
   }
   .border-blue-100 {
     border-color: var(--color-blue-100);
@@ -2212,6 +2289,9 @@
   .bg-secondary-gray {
     background-color: var(--color-secondary-gray);
   }
+  .bg-stone-500 {
+    background-color: var(--color-stone-500);
+  }
   .bg-teal-50 {
     background-color: var(--color-teal-50);
   }
@@ -2527,6 +2607,9 @@
   .px-1 {
     padding-inline: calc(var(--spacing) * 1);
   }
+  .px-1\.5 {
+    padding-inline: calc(var(--spacing) * 1.5);
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -2544,6 +2627,9 @@
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
@@ -2828,8 +2914,8 @@
   .text-\[14px\] {
     font-size: 14px;
   }
-  .text-\[15px\] {
-    font-size: 15px;
+  .text-\[18px\] {
+    font-size: 18px;
   }
   .text-\[min\(18px\)\] {
     font-size: min(18px);
@@ -3065,6 +3151,9 @@
   }
   .text-red-900 {
     color: var(--color-red-900);
+  }
+  .text-search-bar {
+    color: var(--color-search-bar);
   }
   .text-sky-500 {
     color: var(--color-sky-500);
@@ -3426,6 +3515,16 @@
       width: calc(1/2 * 100%);
     }
   }
+  .md\:w-1\/4 {
+    @media (width >= 48rem) {
+      width: calc(1/4 * 100%);
+    }
+  }
+  .md\:w-3\/4 {
+    @media (width >= 48rem) {
+      width: calc(3/4 * 100%);
+    }
+  }
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -3449,6 +3548,11 @@
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
+    }
+  }
+  .md\:overflow-x-hidden {
+    @media (width >= 48rem) {
+      overflow-x: hidden;
     }
   }
   .md\:bg-primary-blue {
@@ -11637,7 +11741,10 @@ td {
   padding: calc(var(--spacing) * 2);
 }
 th {
-  padding: calc(var(--spacing) * 1);
+  padding-inline: calc(var(--spacing) * 2);
+  padding-block: calc(var(--spacing) * 1);
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
 }
 tr:nth-child(odd) {
   background-color: var(--color-primary-gray);
