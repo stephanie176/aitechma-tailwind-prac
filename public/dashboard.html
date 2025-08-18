@@ -9,7 +9,7 @@
 </head>
 <body class="bg-main-dark relative flex text-gray-400">
   <!-- side nav bar -->
-  <aside class="bg-secondary-dark h-dvh p-3 pt-16 flex flex-col justify-between"> 
+  <aside class="bg-secondary-dark h-dvh p-2 pt-16 flex flex-col justify-between"> 
     <!-- main nav -->
     <nav>
       <ul class="space-y-4">
@@ -17,8 +17,8 @@
           <i class="fa-solid fa-grip text-gold-accent"></i>
         </div><span class="text-[10px]">Home</span></a></li>
         <li><a href="requests.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-          <i class="fa-solid fa-file-arrow-down">
-        </div></i><span class="text-[10px]">Requests</span></a></li>
+          <i class="fa-solid fa-file-arrow-down"></i>
+        </div><span class="text-[10px]">Requests</span></a></li>
         <li><a href="interviews.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
           <i class="fa-solid fa-comment"></i>
         </div><span class="text-[10px]">Interviews</span></a></li>
@@ -39,166 +39,177 @@
 
   <!-- main section -->
   <section class="w-full">
-    <!-- content -->
-    <div>
-      <!-- head nav -->
-      <div class="bg-secondary-dark flex justify-between">
-        <a href="dashboard.html"><img src="images/logo.png" alt=""></a>
-        <!-- profile -->
-        <div class="text-gray-400 flex items-center">
-          <img src="images/profile.png" alt="" class="h-10 cursor-pointer">
-          <!-- dropdown -->
-          <button id="dropdownButton" data-dropdown-toggle="dropdownMenu" class="px-4 py-2 flex items-center w-32 cursor-pointer">
-            <span class="flex flex-col text-[9px]"><p>Tyms Africa</p><p>Tech Employer</p></span>
-            <svg class="w-4 h-4 ml-2 transition-transform duration-200" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-            </svg>
-          </button>
-          <div id="dropdownMenu" class="hidden divide-y divide-gray-100 rounded-lg shadow w-40">
-            <ul class="py-2 text-[9px] text-gray-700">
-              <li>
-                <div class="px-4 py-2 hover:bg-gray-400 cursor-pointer">
-                  <p class="font-semibold">Item 1</p>
-                  <p class="text-[9px] text-gray-500">Extra detail</p>
-                </div>
-              </li>
-              <li>
-                <div class="px-4 py-2 hover:bg-gray-400 cursor-pointer">
-                  <p class="font-semibold">Item 2</p>
-                  <p class="text-[9px] text-gray-500">Extra detail</p>
-                </div>
-              </li>
-            </ul>
-          </div>
+    <!-- head nav -->
+    <div class="bg-secondary-dark flex justify-between">
+      <a href="dashboard.html"><img src="images/logo.png" alt=""></a>
+      <!-- profile -->
+      <div class="text-gray-400 flex items-center -space-x-2">
+        <img src="images/profile.png" alt="" class="h-10 cursor-pointer">
+        <!-- dropdown -->
+        <button id="dropdownButton" data-dropdown-toggle="dropdownMenu" class="px-4 py-2 flex items-center w-32 cursor-pointer">
+          <span class="flex flex-col text-[9px]"><p>Tyms Africa</p><p>Tech Employer</p></span>
+          <svg class="w-4 h-4 ml-2 transition-transform duration-200" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="dropdownMenu" class="hidden divide-y divide-gray-100 rounded-lg shadow w-40">
+          <ul class="py-2 text-[9px] text-gray-700">
+            <li>
+              <div class="px-4 py-2 hover:bg-gray-400 cursor-pointer">
+                <p class="font-semibold">Item 1</p>
+                <p class="text-[9px] text-gray-500">Extra detail</p>
+              </div>
+            </li>
+            <li>
+              <div class="px-4 py-2 hover:bg-gray-400 cursor-pointer">
+                <p class="font-semibold">Item 2</p>
+                <p class="text-[9px] text-gray-500">Extra detail</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- main content -->
+    <div class="z-10 rounded-md text-gray-100 p-3 space-y-4">
+      <!-- intro -->
+      <div>
+        <h3 class="text-2xl tyms">Hi Tyms!</h3>
+        <p class="space-x-1"><i class="fa-solid fa-cloud-sun text-gold-accent"></i><span>Saturday 18 November, 2023</span></p>
+      </div>
+      <!-- info -->
+      <div class="flex items-center space-x-1 bg-secondary-gray p-2 rounded-md">
+        <div class="bg-primary-gray p-1 rounded-sm w-7 h-7 text-center text-gold-accent">
+        <i class="fa-solid fa-clock"></i>
+        </div>
+        <span class="text-[13px] font-semibold text-gray-300">We are currently reviewing your profile. You will be notified once you are verified</span>
+      </div>
+      <!-- submissions -->
+      <div class="grid md:grid-cols-4 grid-cols-2 gap-4">
+        <div class="card">
+          <a href="requests.html" class="relative">
+            <i class="fa-solid fa-comments opacity-5 text-5xl top-24 overflow-hidden"></i>
+            <div class="p-3">
+              <h1 class="text-3xl mb-3">4</h1>
+              <h5>Talent Requests</h5>
+              <p>Click to see your talent requests</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="interviews.html">
+            <i class="fa-solid fa-comments opacity-5 text-5xl top-24 overflow-hidden"></i>
+            <div class="p-3">
+              <h1 class="text-3xl mb-3">3</h1>
+              <h5>Talent Interviews</h5>
+              <p>Click to see your interviews</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <i class="fa-solid fa-comments opacity-5 text-5xl top-24 overflow-hidden"></i>
+            <div class="p-3">
+              <h1 class="text-3xl mb-3">5</h1>
+              <h5>Talent Offers</h5>
+              <p>Click to create and see offers</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <i class="fa-solid fa-comments opacity-5 text-5xl top-24 overflow-hidden"></i>
+            <div class="p-3">
+              <h1 class="text-3xl mb-3">1</h1>
+              <h5>Bill</h5>
+              <p>Click to see your bills</p>
+            </div>
+          </a>
         </div>
       </div>
 
-      <!-- main content -->
-      <div class="z-10 rounded-md text-gray-100 p-4 space-y-4">
-        <!-- intro -->
+      <!-- recommended talents -->
+      <div class="space-y-2">
         <div>
-          <h3>Hi Tyms!</h3>
-          <p><span></span>Saturday 18 November, 2023</p>
+          <h2 class="tyms text-2xl">Recommended Talents</h2>
         </div>
-        <!--  -->
-        <div>
-          <span><i class="fa-solid fa-clock"></i></span>
-          <p>We are currently reviewing your profile. You will be notified once you are verified</p>
-        </div>
-        <!-- submissions -->
-        <div class="flex">
-          <div class="card">
-            <a href="requests.html">
-              <h1>4</h1>
-              <h5>Talent Requests</h5>
-              <p>Click to see your talent requests</p>
+        <!-- recommended profiles -->
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="card p-3">
+            <a href="profile.html" class="space-y-1">
+              <div class="flex gap-2">
+                <div class="relative ">
+                  <img src="https://randomuser.me/api/portraits/men/16.jpg" alt="" class="rounded-full w-10 ">
+                  <div class="bg-primary-green rounded-full w-2.5 h-2.5 absolute bottom-0.5 right-1 z-10 border border-secondary-green"></div>
+                </div>
+                <div class="text-gray-200 font-semibold flex flex-col">
+                  <span class="">Muhammed Adepoju</span>
+                  <span class="text-[12px]">Product Designer</span>
+                </div>
+              </div>
+              <div class="bg-secondary-gray rounded-md p-1 flex items-center w-40 text-center">
+                <i class="fa-regular fa-building text-gray-400"></i>
+                <p>10 years experience</p>
+              </div>
+              <p>Pay schedule: <span class="font-semibold text-gray-200">Weekly</span></p>
+              <p>Pay range: <span class="font-semibold text-gray-200">$7,000</span></p>
+              <div class="flex gap-2 text-stone-300 font-semibold">
+                <p class="pill">Figma</p>
+                <p class="pill">Adobe XD</p>
+                <p class="pill">Illustrator</p>
+              </div>
             </a>
           </div>
-          <div class="card">
-            <a href="interviews.html">
-              <h1>3</h1>
-              <h5>Talent Interviews</h5>
-              <p>Click to see your interviews</p>
+          <div class="card p-3">
+            <a href="profile.html" class="space-y-1">
+              <div class="flex gap-2">
+                <div class="relative ">
+                  <img src="https://randomuser.me/api/portraits/men/16.jpg" alt="" class="rounded-full w-10 ">
+                  <div class="bg-primary-green rounded-full w-2.5 h-2.5 absolute bottom-0.5 right-1 z-10 border border-secondary-green"></div>
+                </div>
+                <div class="text-gray-200 font-semibold flex flex-col">
+                  <span class="">Muhammed Adepoju</span>
+                  <span class="text-[12px]">Product Designer</span>
+                </div>
+              </div>
+              <div class="bg-secondary-gray rounded-md p-1 flex items-center w-40 text-center">
+                <i class="fa-regular fa-building text-gray-400"></i>
+                <p>10 years experience</p>
+              </div>
+              <p>Pay schedule: <span class="font-semibold text-gray-200">Weekly</span></p>
+              <p>Pay range: <span class="font-semibold text-gray-200">$7,000</span></p>
+              <div class="flex gap-2 text-stone-300 font-semibold">
+                <p class="pill">Figma</p>
+                <p class="pill">Adobe XD</p>
+                <p class="pill">Illustrator</p>
+              </div>
             </a>
           </div>
-          <div class="card">
-            <a href="#">
-              <h1>5</h1>
-              <h5>Talent Offers</h5>
-              <p>Click to create and see offers</p>
+          <div class="card p-3">
+            <a href="profile.html" class="space-y-1">
+              <div class="flex gap-2">
+                <div class="relative ">
+                  <img src="https://randomuser.me/api/portraits/men/16.jpg" alt="" class="rounded-full w-10 ">
+                  <div class="bg-primary-green rounded-full w-2.5 h-2.5 absolute bottom-0.5 right-1 z-10 border border-secondary-green"></div>
+                </div>
+                <div class="text-gray-200 font-semibold flex flex-col">
+                  <span class="">Muhammed Adepoju</span>
+                  <span class="text-[12px]">Product Designer</span>
+                </div>
+              </div>
+              <div class="bg-secondary-gray rounded-md p-1 flex items-center w-40 text-center">
+                <i class="fa-regular fa-building text-gray-400"></i>
+                <p>10 years experience</p>
+              </div>
+              <p>Pay schedule: <span class="font-semibold text-gray-200">Weekly</span></p>
+              <p>Pay range: <span class="font-semibold text-gray-200">$7,000</span></p>
+              <div class="flex gap-2 text-stone-300 font-semibold">
+                <p class="pill">Figma</p>
+                <p class="pill">Adobe XD</p>
+                <p class="pill">Illustrator</p>
+              </div>
             </a>
-          </div>
-          <div class="card">
-            <a href="#">
-              <h1>1</h1>
-              <h5>Bill</h5>
-              <p>Click to see your bills</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- recommended talents -->
-        <div>
-          <div>
-            <h2>Recommended Talents</h2>
-          </div>
-          <!-- recommended profiles -->
-          <div>
-            <div class="card">
-              <a href="profile.html">
-                <div>
-                  <div>
-                    <img src="" alt="">
-                    <div></div>
-                  </div>
-                  <div>
-                    <h5>Muhammed Adepoju</h5>
-                    <p>Product Designer</p>
-                  </div>
-                </div>
-                <div>
-                  <span></span>
-                  <h6>10 years experience</h6>
-                </div>
-                <h6>Pay schedule: <span>Weekly</span></h6>
-                <h6>Pay range: <span>$7,000</span></h6>
-                <div>
-                  <span>Figma</span>
-                  <span>Adobe XD</span>
-                  <span>Illustrator</span>
-                </div>
-              </a>
-            </div>
-            <div class="card">
-              <a href="profile.html">
-                <div>
-                  <div>
-                    <img src="" alt="">
-                    <div></div>
-                  </div>
-                  <div>
-                    <h5>Muhammed Adepoju</h5>
-                    <p>Product Designer</p>
-                  </div>
-                </div>
-                <div>
-                  <span></span>
-                  <h6>10 years experience</h6>
-                </div>
-                <h6>Pay schedule: <span>Weekly</span></h6>
-                <h6>Pay range: <span>$7,000</span></h6>
-                <div>
-                  <span>Figma</span>
-                  <span>Adobe XD</span>
-                  <span>Illustrator</span>
-                </div>
-              </a>
-            </div>
-            <div class="card">
-              <a href="profile.html">
-                <div>
-                  <div>
-                    <img src="" alt="">
-                    <div></div>
-                  </div>
-                  <div>
-                    <h5>Muhammed Adepoju</h5>
-                    <p>Product Designer</p>
-                  </div>
-                </div>
-                <div>
-                  <span></span>
-                  <h6>10 years experience</h6>
-                </div>
-                <h6>Pay schedule: <span>Weekly</span></h6>
-                <h6>Pay range: <span>$7,000</span></h6>
-                <div>
-                  <span>Figma</span>
-                  <span>Adobe XD</span>
-                  <span>Illustrator</span>
-                </div>
-              </a>
-            </div>
           </div>
         </div>
       </div>
