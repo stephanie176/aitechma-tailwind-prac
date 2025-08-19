@@ -9,6 +9,7 @@
 </head>
 <body class="bg-main-dark relative flex text-gray-400">
   <!-- side nav bar -->
+  <div class="hidden md:block">
   <aside class="bg-secondary-dark h-dvh p-2 pt-16 flex flex-col justify-between"> 
     <!-- main nav -->
     <nav>
@@ -36,6 +37,7 @@
       <a href="#"><span><i class="fa-solid fa-circle-question text-[18px]"></i></span></a>
     </div>
   </aside>
+  </div>
 
   <section class="w-full">
     <!-- content -->
@@ -72,156 +74,223 @@
         </div>
       </div>
 
+      <!-- nav nav -->
+      <div class="bg-secondary-dark p-2 flex md:hidden"> 
+        <!-- main nav -->
+        <nav class="grid grid-cols-2 mx-auto">
+          <ul class="flex space-x-3">
+            <li><a href="dashboard.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+              <i class="fa-solid fa-grip text-gold-accent"></i>
+            </div><span class="text-[10px]">Home</span></a></li>
+            <li><a href="requests.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+              <i class="fa-solid fa-file-arrow-down"></i>
+            </div><span class="text-[10px]">Requests</span></a></li>
+            <li><a href="interviews.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+              <i class="fa-solid fa-comment"></i>
+            </div><span class="text-[10px]">Interviews</span></a></li>
+            <li><a href="#" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+              <i class="fa-solid fa-envelopes-bulk">
+            </div></i><span class="text-[10px]">Offers</span></a></li>
+            <li><a href="#" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+              <i class="fa-solid fa-calendar"></i>
+            </div><span class="text-[10px]">Bills</span></a></li>
+          </ul>
+          <!-- lower nav -->
+          <div class="text-gray-400 flex items-center space-x-2 justify-end">
+            <a href="#" class="flex flex-col space-y-1 items-center">
+              <div class="bg-primary-gray p-1 rounded-sm">
+                <span><i class="fa-solid fa-gear text-[18px]"></i></span>
+              </div>
+              <span class="md:hidden text-[10px]">Settings</span>
+            </a>
+            <a href="#" class="flex flex-col space-y-1 items-center">
+              <div class="bg-primary-gray p-1 rounded-sm">
+                <span><i class="fa-solid fa-circle-question text-[18px]"></i></span>
+              </div>
+              <span class="md:hidden text-[10px]">Questions</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+
       <!-- main content -->
       <div class="z-10 rounded-md text-gray-100 p-5 space-y-4">
         <div>
-          <ul>
-            <li><a href="dashboard.html">Home</a></li>
+          <ul class="flex space-x-2 text-[12px]">
+            <li><a href="dashboard.html" class="text-gold-accent">Home</a></li>
             <li>/</li>
-            <li>Muhammed Adepoju</li>
+            <li><a href="profile.html">Muhammed Adepoju</a></li>
           </ul>
         </div>
-        <div>
-          <div>
-            <div>
-              <img src="" alt="">
-              <div></div>
+        <div class="flex justify-between">
+          <div class="flex gap-2">
+            <div class="relative ">
+              <img src="https://randomuser.me/api/portraits/men/16.jpg" alt="" class="rounded-full w-10 ">
+              <div class="bg-primary-green rounded-full w-2.5 h-2.5 absolute bottom-0.5 right-1 z-10 border border-secondary-green"></div>
             </div>
-            <div>
-              <h3>Muhammed Adepoju</h3>
-              <p>Product Designer</p>
+            <div class="text-gray-200 font-semibold flex flex-col">
+              <span class="text-[14px]">Muhammed Adepoju</span>
+              <span class="text-[12px] font-normal">Product Designer</span>
             </div>
           </div>
-          <button>Shortlist for interview</button>
+          <button class="gold-button">Shortlist for interview</button>
         </div>
         <hr class="text-gray-700">
-        <div>
-          <div class="">
-            <h4>Work Nature</h4>
-            <div>
-              <div>
+
+        <!-- portfolio -->
+        <div class="grid md:grid-cols-3 gap-6 port w-full">
+          <div class="card py-2 px-4 space-y-2">
+            <!-- work nature -->
+            <span class="text-[14px] font-normal">Work Nature</span>
+            <div class="space-y-2 text-[11px]">
+              <div class="grid grid-cols-3">
                 <div>
                   <p>Job Type interest</p>
-                  <p>Full time</p>
+                  <p class="font-bold">Full time</p>
                 </div>
                 <div>
                   <p>Work Mode</p>
-                  <p>Remote</p>
+                  <p class="font-bold">Remote</p>
                 </div>
               </div>
-              <div>
+              <div class="space-y-1">
                 <p>Available in</p>
-                <div>
-                  <div><p><span></span>United Kingdom</p></div>
-                  <div><p><span></span>Canada</p></div>
-                  <div><p><span></span>Australia</p></div>
+                <div class="flex space-x-2 flex-wrap space-y-1">
+                  <div class="pill">
+                    <p class="flex items-center gap-1">
+                    <span class="max-w-[15px] max-h-[10px] rounded-full overflow-hidden">
+                      <img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.5.0/flags/4x3/gb.svg" alt="UK flag" class="w-full h-full object-cover">
+                    </span>
+                    United Kingdom</p>
+                  </div>
+                  <div class="pill">
+                    <p class="flex items-center gap-1">
+                    <span class="max-w-[15px] max-h-[10px] rounded-full overflow-hidden">
+                      <img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.5.0/flags/4x3/ca.svg" alt="Canada flag" class="w-full h-full object-cover">
+                    </span>
+                    Canada</p>
+                  </div>
+                  <div class="pill">
+                    <p class="flex items-center gap-1">
+                      <span class="max-w-[15px] max-h-[10px] rounded-full overflow-hidden">
+                        <img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.5.0/flags/4x3/au.svg" alt="Australia flag" class="w-full h-full object-cover">
+                      </span>Australia</p>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <h4>Work Enumeration</h4>
-            <div>
-              <div>
-                <div>
-                  <p>Earning Schedule</p>
-                  <p>Weekly</p>
-                </div>
-                <div>
-                  <p>Preferred Currency</p>
-                  <p>USD (United States Dollar)</p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <p>Min. Rate</p>
-                  <p>$6,000</p>
-                </div>
-                <div>
-                  <p>Max. Rate</p>
-                  <p>$10,000</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <h4>Skills</h4>
-            <div>
-              <div>
-                <div>
-                  <p>Specialisation</p>
-                  <p>Frontend development</p>
-                </div>
-                <div>
-                  <p>Seniority Level</p>
-                  <p>Mid-Level</p>
-                </div>
-                <div>
-                  <p>First Earning</p>
-                  <p>2011</p>
-                </div>
-              </div>
-              <div>
-                <p>Stack</p>
-                <div>
-                  <div><p>PHP</p></div>
-                  <div><p>FIGMA</p></div>
-                  <div><p>NodeJS</p></div>
-                  <div><p>C#</p></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <!-- work experience -->
-          <div>
-            <h2>Work Experience</h2>
-            <div>
-              <div><span></span></div>
-              <div>
-                <h2>Google Africa</h2>
-                <p>Frontend Developer</p>
-                <p>Feb 2023 - Present</p>
-                <p>Skills:Figma <span>&middot;</span> Software development</p>
-                <p>Design and produce visually appealing graphics, and illustrations for digital and print media, including but not limited to social media posts</p>
-              </div>
-            </div>
-            <div>
-              <div><span></span></div>
-              <div>
-                <h2>Google Africa</h2>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
               </div>
             </div>
           </div>
 
-          <!-- remember to add scrolling for links -->
+          <!-- work enumeration -->
+          <div class="card py-2 px-4">
+            <span class="text-[14px] font-normal">Work Enumeration</span>
+            <div class="text-[11px] space-y-2">
+              <div class="grid grid-cols-2">
+                <div>
+                  <p>Earning Schedule</p>
+                  <p class="font-bold">Weekly</p>
+                </div>
+                <div>
+                  <p>Preferred Currency</p>
+                  <p class="font-bold">USD (United States Dollar)</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-2">
+                <div>
+                  <p>Min. Rate</p>
+                  <p class="font-bold">$6,000</p>
+                </div>
+                <div>
+                  <p>Max. Rate</p>
+                  <p class="font-bold">$10,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- skills -->
+          <div class="card py-2 px-4 space-y-1">
+            <span class="text-[14px] font-normal">Skills</span>
+            <div class="text-[10px] space-y-2">
+              <div class="flex space-x-4 flex-wrap space-y-2">
+                <div>
+                  <p>Specialisation</p>
+                  <p class="font-bold">Frontend development</p>
+                </div>
+                <div>
+                  <p>Seniority Level</p>
+                  <p class="font-bold">Mid-Level</p>
+                </div>
+                <div>
+                  <p>First Earning</p>
+                  <p class="font-bold">2011</p>
+                </div>
+              </div>
+              <div class="space-y-1">
+                <p>Stack</p>
+                <div class="flex space-x-2 flex-wrap space-y-1">
+                  <div class="pill"><p>PHP</p></div>
+                  <div class="pill"><p>FIGMA</p></div>
+                  <div class="pill"><p>NodeJS</p></div>
+                  <div class="pill"><p>C#</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-5 w-full">
+          <!-- work experience -->
+          <div class="col-span-2 space-y-4">
+            <h2>Work Experience</h2>
+            <div class="card flex space-x-3 px-4 py-3">
+              <div>
+                <span class="bg-search-bar py-1 px-2 rounded-md border border-gray-500"><i class="fa-solid fa-briefcase text-gray-400"></i></span>
+              </div>
+              <div class="space-y-1.5">
+                <h2 class="text-gray-200">Google Africa</h2>
+                <p class="font-semibold text-gray-200">Frontend Developer</p>
+                <p class="font-light">Feb 2023 - Present</p>
+                <p class="font-semibold text-gray-200">Skills : Figma <span>&middot;</span> Software development</p>
+                <p class="font-light">Design and produce visually appealing graphics, and illustrations for digital and print media, including but not limited to social media posts</p>
+              </div>
+            </div>
+            <div class="card flex space-x-3 px-4 py-3">
+              <div>
+                <span class="bg-search-bar py-1 px-2 rounded-md border border-gray-500"><i class="fa-solid fa-briefcase text-gray-400"></i></span>
+              </div>
+              <div class="space-y-1.5">
+                <h2 class="text-gray-200">Google Africa</h2>
+                <p class="font-semibold text-gray-200">Frontend Developer</p>
+                <p class="font-light">Feb 2023 - Present</p>
+                <p class="font-semibold text-gray-200">Skills : Figma <span>&middot;</span> Software development</p>
+                <p class="font-light">Design and produce visually appealing graphics, and illustrations for digital and print media, including but not limited to social media posts</p>
+              </div>
+            </div>
+          </div>
+          
           <!-- links -->
-          <div>
+          <div class="card md:col-span-1 py-2 px-5 space-y-4 links w-full">
             <h4>Links</h4>
-            <div>
+            <div class="space-y-1">
               <p>LinkedIn profile</p>
-              <div><a href="#"><span></span>https://tailwindcss.com/docs/installation/tailwind-cli</a></div>
+              <div class="pill h-7"><a href="#" class="space-x-1"><span><i class="fa-solid fa-link text-gold-accent"></i></span><span>https://tailwindcss.com/docs/installation/tailwind-cli</span></a></div>
             </div>
             <div>
               <p>Public link to CV</p>
-              <div><a href="#"><span></span>https://tailwindcss.com/docs/installation/tailwind-cli</a></div>
+              <div class="pill h-7"><a href="#" class="space-x-1"><span><i class="fa-solid fa-link text-gold-accent"></i></span><span>https://tailwindcss.com/docs/installation/tailwind-cli</span></a></div>
             </div>
             <div>
               <p>Top 3 Portfolios</p>
-              <div><a href="#"><span></span>https://tailwindcss.com/docs/installation/tailwind-cli</a></div>
-              <div><a href="#"><span></span>https://tailwindcss.com/docs/installation/tailwind-cli</a></div>
-              <div><a href="#"><span></span>https://tailwindcss.com/docs/installation/tailwind-cli</a></div>
+              <div class="pill h-7"><a href="#" class="space-x-1"><span><i class="fa-solid fa-link text-gold-accent"></i></span><span>https://tailwindcss.com/docs/installation/tailwind-cli</span></a></div>
+              <div class="pill h-7"><a href="#" class="space-x-1"><span><i class="fa-solid fa-link text-gold-accent"></i></span><span>https://tailwindcss.com/docs/installation/tailwind-cli</span></a></div>
+              <div class="pill h-7"><a href="#" class="space-x-1"><span><i class="fa-solid fa-link text-gold-accent"></i></span><span>https://tailwindcss.com/docs/installation/tailwind-cli</span></a></div>
             </div>
             <div>
               <p>Top 3 Online Articles</p>
-              <div><a href="#"><span></span>https://tailwindcss.com/docs/installation/tailwind-cli</a></div>
-              <div><a href="#"><span></span>https://tailwindcss.com/docs/installation/tailwind-cli</a></div>
-              <div><a href="#"><span></span>https://tailwindcss.com/docs/installation/tailwind-cli</a></div>
+              <div class="pill h-7"><a href="#" class="space-x-1"><span><i class="fa-solid fa-link text-gold-accent"></i></span><span>https://tailwindcss.com/docs/installation/tailwind-cli</span></a></div>
+              <div class="pill h-7"><a href="#" class="space-x-1"><span><i class="fa-solid fa-link text-gold-accent"></i></span><span>https://tailwindcss.com/docs/installation/tailwind-cli</span></a></div>
+              <div class="pill h-7"><a href="#" class="space-x-1"><span><i class="fa-solid fa-link text-gold-accent"></i></span><span>https://tailwindcss.com/docs/installation/tailwind-cli</span></a></div>
             </div>
           </div>
         </div>

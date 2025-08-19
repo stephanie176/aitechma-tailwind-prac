@@ -9,7 +9,8 @@
 </head>
 <body class="bg-main-dark relative flex text-gray-400">
   <!-- side nav bar -->
-  <aside class="bg-secondary-dark h-dvh md:p-2 p-1 pt-16 flex flex-col justify-between"> 
+  <div class="hidden md:block">
+  <aside class="bg-secondary-dark h-dvh p-2 pt-16 flex flex-col justify-between"> 
     <!-- main nav -->
     <nav>
       <ul class="space-y-4">
@@ -36,6 +37,7 @@
       <a href="#"><span><i class="fa-solid fa-circle-question text-[18px]"></i></span></a>
     </div>
   </aside>
+  </div>
 
   <!-- main section -->
   <section class="w-full">
@@ -69,6 +71,45 @@
           </ul>
         </div>
       </div>
+    </div>
+
+    <!-- nav nav -->
+    <div class="bg-secondary-dark p-2 flex md:hidden"> 
+      <!-- main nav -->
+      <nav class="grid grid-cols-2 mx-auto">
+        <ul class="flex space-x-3">
+          <li><a href="dashboard.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+            <i class="fa-solid fa-grip"></i>
+          </div><span class="text-[10px]">Home</span></a></li>
+          <li><a href="requests.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+            <i class="fa-solid fa-file-arrow-down text-gold-accent"></i>
+          </div><span class="text-[10px]">Requests</span></a></li>
+          <li><a href="interviews.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+            <i class="fa-solid fa-comment"></i>
+          </div><span class="text-[10px]">Interviews</span></a></li>
+          <li><a href="#" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+            <i class="fa-solid fa-envelopes-bulk">
+          </div></i><span class="text-[10px]">Offers</span></a></li>
+          <li><a href="#" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+            <i class="fa-solid fa-calendar"></i>
+          </div><span class="text-[10px]">Bills</span></a></li>
+        </ul>
+        <!-- lower nav -->
+        <div class="text-gray-400 flex items-center space-x-2 justify-end">
+          <a href="#" class="flex flex-col space-y-1 items-center">
+            <div class="bg-primary-gray p-1 rounded-sm">
+              <span><i class="fa-solid fa-gear text-[18px]"></i></span>
+            </div>
+            <span class="md:hidden text-[10px]">Settings</span>
+          </a>
+          <a href="#" class="flex flex-col space-y-1 items-center">
+            <div class="bg-primary-gray p-1 rounded-sm">
+              <span><i class="fa-solid fa-circle-question text-[18px]"></i></span>
+            </div>
+            <span class="md:hidden text-[10px]">Questions</span>
+          </a>
+        </div>
+      </nav>
     </div>
 
     <!-- main content -->
