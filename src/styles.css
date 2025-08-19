@@ -9,7 +9,6 @@
   --color-secondary-dark: #1d1e28;
   --color-primary-gray: #3b394d;
   --color-secondary-gray: #2f313d;
-  /* --color-primary-gray: #444444; */
   --color-search-bar: #2d2d2d;
   --color-gold-accent: #e0b831;
   --color-secondary-gold: #5e4f25;
@@ -35,10 +34,6 @@ input[type='email'], input[type='password'] {
 input[type='checkbox'] {
   @apply focus:outline-none focus:ring-0 border-gray-300 bg-gray-300;
 }
-
-/* input[type='search'] {
-  @apply ;
-} */
 
 .signin-btn {
   @apply w-full rounded-sm py-3 cursor-pointer hover:bg-secondary-blue bg-primary-blue text-white ;
@@ -72,6 +67,22 @@ p {
   @apply text-gray-500;
 }
 
+td {
+  @apply px-2 py-1;
+}
+
+th {
+  @apply px-2 py-1 font-normal;
+}
+
+tr:nth-child(odd) {
+  @apply bg-primary-gray;
+}
+
+tr:nth-child(even) {
+  @apply bg-secondary-dark;
+}
+
 .gold-button {
   @apply px-2 py-1 bg-gold-accent text-main-dark hover:border hover:border-gold-accent rounded-md hover:text-gold-accent hover:bg-main-dark hover:cursor-pointer transition duration-200;
 }
@@ -102,20 +113,4 @@ p {
 
 .green-linear-btn {
   @apply px-2 py-1 rounded-sm cursor-pointer border border-primary-green hover:border-gray-200 text-gray-200 bg-linear-to-r from-secondary-green to-secondary-gray;
-}
-
-td {
-  @apply px-2 py-1;
-}
-
-th {
-  @apply px-2 py-1 font-normal;
-}
-
-tr:nth-child(odd) {
-  @apply bg-primary-gray;
-}
-
-tr:nth-child(even) {
-  @apply bg-secondary-dark;
 }
