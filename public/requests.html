@@ -9,15 +9,15 @@
 </head>
 <body class="bg-main-dark relative flex text-gray-400">
   <!-- side nav bar -->
-  <aside class="bg-secondary-dark h-dvh p-2 pt-16 flex flex-col justify-between"> 
+  <aside class="bg-secondary-dark h-dvh md:p-2 p-1 pt-16 flex flex-col justify-between"> 
     <!-- main nav -->
     <nav>
       <ul class="space-y-4">
         <li><a href="dashboard.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-          <i class="fa-solid fa-grip text-gold-accent"></i>
+          <i class="fa-solid fa-grip"></i>
         </div><span class="text-[10px]">Home</span></a></li>
         <li><a href="requests.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-          <i class="fa-solid fa-file-arrow-down"></i>
+          <i class="fa-solid fa-file-arrow-down text-gold-accent"></i>
         </div><span class="text-[10px]">Requests</span></a></li>
         <li><a href="interviews.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
           <i class="fa-solid fa-comment"></i>
@@ -72,175 +72,176 @@
     </div>
 
     <!-- main content -->
-    <div class="rounded-md p-6 space-y-4 text-gray-200">
-    <!-- talent requests -->
-    <div>
-      <h2 class="text-xl tyms">Talent Requests</h2>
-    </div>
-    <!-- search and filter bar -->
-    <div class="w-full md:flex items-center space-x-10">
-      <div class="md:w-3/4">
-        <form class="mx-auto">
-          <div class="relative">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3">
-              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-              </svg>
-            </div>
-            <input type="search" id="search" class="w-full ps-10 text-sm bg-search-bar text-gray-300 border border-secondary-gray rounded-lg focus:ring-gold-accent focus:border-gold-accent-200" placeholder="Search by title">
-          </div>
-        </form>
+    <div class="rounded-md md:p-6 p-3 space-y-4 text-gray-200">
+      <!-- talent requests -->
+      <div>
+        <h2 class="text-xl tyms">Talent Requests</h2>
       </div>
-      <div class="md:w-1/4 flex space-x-4 items-center mt-3">
-        <div class="flex items-baseline">
-          <p>Filter by:</p>
+      <!-- search and filter bar -->
+      <div class="w-full md:flex items-center space-x-10">
+        <div class="md:w-3/4">
+          <form class="mx-auto">
+            <div class="relative">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3">
+                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+              </div>
+              <input type="search" id="search" class="w-full ps-10 text-sm bg-search-bar text-gray-300 border border-secondary-gray rounded-lg focus:ring-gold-accent focus:border-gold-accent-200" placeholder="Search by title">
+            </div>
+          </form>
+        </div>
+        <div class="md:w-1/4 flex space-x-4 items-center mt-3">
+          <div class="flex items-baseline">
+            <p>Filter by:</p>
+            <!-- dropdown -->
+            <div class="text-[14px] text-gray-400">
+              <button id="filter-button" data-dropdown-toggle="filter" class="px-3 py-1 flex items-center w-14 cursor-pointer">
+                <span class="flex flex-col">All</span>
+                <svg class="w-4 h-4 ml-2 transition-transform duration-200" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+              <div id="filter" class="hidden divide-y divide-gray-100 rounded-lg shadow w-24 bg-secondary-dark">
+                <ul class="py-2">
+                  <li class="cursor-pointer text-gray-500 ">
+                    <p class="p-1 hover:bg-gray-700">something</p>
+                  </li>
+                  <li class="cursor-pointer text-gray-500">
+                    <p class="p-1 hover:bg-gray-700">something</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button class="gold-button">Make a Request</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- table -->
+      <div class="mx-auto overflow-y-auto rounded-md border border-secondary-gray">
+        <table class="table-auto border-collapse text-left text-[14px] w-full">
+          <tr class="border border-secondary-gray bg-secondary-gray">
+            <th>S/N</th>
+            <th>Title</th>
+            <th>Specialisation</th>
+            <th>Location</th>
+            <th>Seniority</th>
+            <th>Min. Years</th>
+            <th>Type</th>
+            <th>Mode</th>
+            <th>Schedule</th>
+            <th>Min. Pay</th>
+            <th>Max. Pay</th>
+            <th>Actions</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Designer</td>
+            <td>Product Design</td>
+            <td>Lagos, Nigeria</td>
+            <td>Mid-Level</td>
+            <td>8 years</td>
+            <td>Full-Time</td>
+            <td>Hybrid</td>
+            <td>Weekly</td>
+            <td>$100,000</td>
+            <td>$120,000</td>
+            <td class="md:flex">
+              <span class="text-gold-accent text-xl cursor-pointer"><i class="fa-solid fa-pen-to-square"></i></span>
+              <button class="gold-accent-btn hidden md:block">Recommendations</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Designer</td>
+            <td>Product Design</td>
+            <td>Lagos, Nigeria</td>
+            <td>Mid-Level</td>
+            <td>8 years</td>
+            <td>Full-Time</td>
+            <td>Hybrid</td>
+            <td>Weekly</td>
+            <td>$100,000</td>
+            <td>$120,000</td>
+            <td class="md:flex">
+              <span class="text-gold-accent text-xl cursor-pointer"><i class="fa-solid fa-pen-to-square"></i></span>
+              <button class="gold-accent-btn hidden md:block">Recommendations</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Designer</td>
+            <td>Product Design</td>
+            <td>Lagos, Nigeria</td>
+            <td>Mid-Level</td>
+            <td>8 years</td>
+            <td>Full-Time</td>
+            <td>Hybrid</td>
+            <td>Weekly</td>
+            <td>$100,000</td>
+            <td>$120,000</td>
+            <td class="md:flex">
+              <span class="text-gold-accent text-xl cursor-pointer"><i class="fa-solid fa-pen-to-square"></i></span>
+              <button class="gold-accent-btn hidden md:block">Recommendations</button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Designer</td>
+            <td>Product Design</td>
+            <td>Lagos, Nigeria</td>
+            <td>Mid-Level</td>
+            <td>8 years</td>
+            <td>Full-Time</td>
+            <td>Hybrid</td>
+            <td>Weekly</td>
+            <td>$100,000</td>
+            <td>$120,000</td>
+            <td class="md:flex">
+              <span class="text-gold-accent text-xl cursor-pointer"><i class="fa-solid fa-pen-to-square"></i></span>
+              <button class="gold-accent-btn hidden md:block">Recommendations</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- pagination -->
+      <div class="flex mx-auto md:flex-row flex-col space-y-2 justify-between">
+        <div class="flex items-center space-x-3">
+          <p>Page you are on</p>
+          <input type="text" id="pages" class="bg-secondary-gray border text-gray-400 text-sm rounded-sm focus:ring-0 focus:outline-none focus:border-gray-400 px-2.5 w-8 h-8" value="1">
+          <p>of 1</p>
+          <div class="-space-x-1">
+            <button class="bg-secondary-gray py-1 px-1.5"><a href="#"><i class="fa-solid fa-chevron-left text-gray-500"></i></a></button>
+            <button class="bg-stone-500 py-1 px-1.5"><a href="#"><i class="fa-solid fa-chevron-right text-gray-200"></i></a></button>
+          </div>
+        </div>
+        <div class="flex">
+          <p>Entries per page:</p>
           <!-- dropdown -->
           <div class="text-[14px] text-gray-400">
-            <button id="filter-button" data-dropdown-toggle="filter" class="px-3 py-1 flex items-center w-14 cursor-pointer">
-              <span class="flex flex-col">All</span>
+            <button id="entries-button" data-dropdown-toggle="entries" class="px-3 py-1 flex items-center w-14 cursor-pointer">
+              <span class="flex flex-col">4</span>
               <svg class="w-4 h-4 ml-2 transition-transform duration-200" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
               </svg>
             </button>
-            <div id="filter" class="hidden divide-y divide-gray-100 rounded-lg shadow w-24 bg-secondary-dark">
+            <div id="entries" class="hidden divide-y divide-gray-100 rounded-lg shadow w-14">
               <ul class="py-2">
-                <li class="cursor-pointer text-gray-500 ">
-                  <p class="p-1 hover:bg-gray-700">something</p>
+                <li class="hover:bg-gray-700 cursor-pointer">
+                  <p class="p-1">5</p>
                 </li>
-                <li class="cursor-pointer text-gray-500">
-                  <p class="p-1 hover:bg-gray-700">something</p>
+                <li class="hover:bg-gray-700 cursor-pointer">
+                  <p class="p-1">6</p>
                 </li>
               </ul>
             </div>
           </div>
-        </div>
-        <div>
-          <button class="gold-button">Make a Request</button>
-        </div>
+        </div>  
       </div>
-    </div>
-
-    <!-- table -->
-    <div class="mx-auto overflow-y-auto rounded-md border border-secondary-gray">
-      <table class="table-auto border-collapse text-left text-[14px] w-full">
-        <tr class="border border-secondary-gray bg-secondary-gray">
-          <th>S/N</th>
-          <th>Title</th>
-          <th>Specialisation</th>
-          <th>Location</th>
-          <th>Seniority</th>
-          <th>Min. Years</th>
-          <th>Type</th>
-          <th>Mode</th>
-          <th>Schedule</th>
-          <th>Min. Pay</th>
-          <th>Max. Pay</th>
-          <th>Actions</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Designer</td>
-          <td>Product Design</td>
-          <td>Lagos, Nigeria</td>
-          <td>Mid-Level</td>
-          <td>8 years</td>
-          <td>Full-Time</td>
-          <td>Hybrid</td>
-          <td>Weekly</td>
-          <td>$100,000</td>
-          <td>$120,000</td>
-          <td class="flex">
-            <span class="text-gold-accent text-xl"><i class="fa-solid fa-pen-to-square"></i></span>
-            <button class="gold-accent-btn">Recommendations</button>
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Designer</td>
-          <td>Product Design</td>
-          <td>Lagos, Nigeria</td>
-          <td>Mid-Level</td>
-          <td>8 years</td>
-          <td>Full-Time</td>
-          <td>Hybrid</td>
-          <td>Weekly</td>
-          <td>$100,000</td>
-          <td>$120,000</td>
-          <td class="flex">
-            <span class="text-gold-accent text-xl"><i class="fa-solid fa-pen-to-square"></i></span>
-            <button class="gold-accent-btn">Recommendations</button>
-          </td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Designer</td>
-          <td>Product Design</td>
-          <td>Lagos, Nigeria</td>
-          <td>Mid-Level</td>
-          <td>8 years</td>
-          <td>Full-Time</td>
-          <td>Hybrid</td>
-          <td>Weekly</td>
-          <td>$100,000</td>
-          <td>$120,000</td>
-          <td class="flex">
-            <span class="text-gold-accent text-xl"><i class="fa-solid fa-pen-to-square"></i></span>
-            <button class="gold-accent-btn">Recommendations</button>
-          </td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Designer</td>
-          <td>Product Design</td>
-          <td>Lagos, Nigeria</td>
-          <td>Mid-Level</td>
-          <td>8 years</td>
-          <td>Full-Time</td>
-          <td>Hybrid</td>
-          <td>Weekly</td>
-          <td>$100,000</td>
-          <td>$120,000</td>
-          <td class="flex">
-            <span class="text-gold-accent text-xl"><i class="fa-solid fa-pen-to-square"></i></span>
-            <button class="gold-accent-btn">Recommendations</button>
-          </td>
-        </tr>
-      </table>
-    </div>
-
-    <!-- pagination -->
-    <div class="flex mx-auto md:flex-row flex-col space-y-2 justify-between">
-      <div class="flex items-center space-x-3">
-        <p>Page you are on</p>
-        <input type="text" id="pages" class="bg-secondary-gray border text-gray-400 text-sm rounded-sm focus:ring-0 focus:outline-none focus:border-gray-400 px-2.5 w-8 h-8" value="1">
-        <p>of 1</p>
-        <div class="-space-x-1">
-          <button class="bg-secondary-gray py-1 px-1.5"><a href="#"><i class="fa-solid fa-chevron-left text-gray-500"></i></a></button>
-          <button class="bg-stone-500 py-1 px-1.5"><a href="#"><i class="fa-solid fa-chevron-right text-gray-200"></i></a></button>
-        </div>
-      </div>
-      <div class="flex">
-        <p>Entries per page:</p>
-        <!-- dropdown -->
-        <div class="text-[14px] text-gray-400">
-          <button id="entries-button" data-dropdown-toggle="entries" class="px-3 py-1 flex items-center w-14 cursor-pointer">
-            <span class="flex flex-col">4</span>
-            <svg class="w-4 h-4 ml-2 transition-transform duration-200" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-            </svg>
-          </button>
-          <div id="entries" class="hidden divide-y divide-gray-100 rounded-lg shadow w-14">
-            <ul class="py-2">
-              <li class="hover:bg-gray-700 cursor-pointer">
-                <p class="p-1">5</p>
-              </li>
-              <li class="hover:bg-gray-700 cursor-pointer">
-                <p class="p-1">6</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>  
     </div>
   </section>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.js"></script>

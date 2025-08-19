@@ -9,7 +9,7 @@
 </head>
 <body class="bg-main-dark relative flex text-gray-400">
   <!-- side nav bar -->
-  <aside class="bg-secondary-dark h-dvh p-3 pt-16 flex flex-col justify-between"> 
+  <aside class="bg-secondary-dark h-dvh p-2 pt-16 flex flex-col justify-between"> 
     <!-- main nav -->
     <nav>
       <ul class="space-y-4">
@@ -17,8 +17,8 @@
           <i class="fa-solid fa-grip"></i>
         </div><span class="text-[10px]">Home</span></a></li>
         <li><a href="requests.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-          <i class="fa-solid fa-file-arrow-down">
-        </div></i><span class="text-[10px]">Requests</span></a></li>
+          <i class="fa-solid fa-file-arrow-down"></i>
+        </div><span class="text-[10px]">Requests</span></a></li>
         <li><a href="interviews.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
           <i class="fa-solid fa-comment text-gold-accent"></i>
         </div><span class="text-[10px]">Interviews</span></a></li>
@@ -38,243 +38,306 @@
   </aside>
 
   <section class="w-full">
-    <!-- content -->
-    <div>
-      <!-- head nav -->
-      <div class="bg-secondary-dark flex justify-between">
-        <a href="dashboard.html"><img src="images/logo.png" alt=""></a>
-        <!-- profile -->
-        <div class="text-gray-400 flex items-center -space-x-2">
-          <img src="images/profile.png" alt="" class="h-10 cursor-pointer">
-          <!-- dropdown -->
-          <button id="dropdownButton" data-dropdown-toggle="dropdownMenu" class="px-4 py-2 flex items-center w-32 cursor-pointer">
-            <span class="flex flex-col text-[9px]"><p>Tyms Africa</p><p>Tech Employer</p></span>
-            <svg class="w-4 h-4 ml-2 transition-transform duration-200" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-            </svg>
-          </button>
-          <div id="dropdownMenu" class="hidden divide-y divide-gray-100 rounded-lg shadow w-40 bg-secondary-dark">
-            <ul class="py-2 text-[9px] text-gray-700">
-              <li>
-                <div class="px-4 py-2 hover:bg-gray-700 cursor-pointer">
-                  <p class="font-semibold">Item 1</p>
-                  <p class="text-[9px] text-gray-500">Extra detail</p>
-                </div>
-              </li>
-              <li>
-                <div class="px-4 py-2 hover:bg-gray-700 cursor-pointer">
-                  <p class="font-semibold">Item 2</p>
-                  <p class="text-[9px] text-gray-500">Extra detail</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- main content -->
-      <div class="z-10 rounded-md p-6 space-y-4">
-        <div>
-          <h1>Interviews</h1>
-        </div>
-        <div>
-          <ul>
-            <li>Talent Interviews</li>
-            <li>Calendar</li>
+    <!-- head nav -->
+    <div class="bg-secondary-dark flex justify-between">
+      <a href="dashboard.html"><img src="images/logo.png" alt=""></a>
+      <!-- profile -->
+      <div class="text-gray-400 flex items-center -space-x-2">
+        <img src="images/profile.png" alt="" class="h-10 cursor-pointer">
+        <!-- dropdown -->
+        <button id="dropdownButton" data-dropdown-toggle="dropdownMenu" class="px-4 py-2 flex items-center w-32 cursor-pointer">
+          <span class="flex flex-col text-[9px]"><p>Tyms Africa</p><p>Tech Employer</p></span>
+          <svg class="w-4 h-4 ml-2 transition-transform duration-200" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="dropdownMenu" class="hidden divide-y divide-gray-100 rounded-lg shadow w-40 bg-secondary-dark">
+          <ul class="py-2 text-[9px] text-gray-700">
+            <li>
+              <div class="px-4 py-2 hover:bg-gray-700 cursor-pointer">
+                <p class="font-semibold">Item 1</p>
+                <p class="text-[9px] text-gray-500">Extra detail</p>
+              </div>
+            </li>
+            <li>
+              <div class="px-4 py-2 hover:bg-gray-700 cursor-pointer">
+                <p class="font-semibold">Item 2</p>
+                <p class="text-[9px] text-gray-500">Extra detail</p>
+              </div>
+            </li>
           </ul>
         </div>
-        <div class="flex">
-          <div>
-            <form class="max-w-md mx-auto">   
-              <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-              <div class="relative">
-                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                  <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                  </svg>
-                </div>
-                <input type="search" id="search" class="block w-full ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search by title" required />
+      </div>
+    </div>
+
+    <!-- main content -->
+    <div class="rounded-md md:px-5 md:pt-2 p-3 space-y-4 text-gray-200">
+      <div>
+        <h1 class="text-xl tyms">Interviews</h1>
+      </div>
+      <!-- page nav -->
+      <div>
+        <ul class="flex space-x-5 text-[13px]">
+          <li class="border-b-2 border-gold-accent"><a href="interviews.html">Talent Interviews</a></li>
+          <li><a href="#">Calendar</a></li>
+        </ul>
+      </div>
+
+      <!-- search and filter bar -->
+      <div class="w-full md:flex items-center space-x-10">
+        <div class="md:w-3/4">
+          <form class="mx-auto">
+            <div class="relative">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3">
+                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
               </div>
-            </form>
-          </div>
+              <input type="search" id="search" class="w-full ps-10 text-sm bg-search-bar text-gray-300 border border-secondary-gray rounded-lg focus:ring-gold-accent focus:border-gold-accent-200" placeholder="Search by title">
+            </div>
+          </form>
+        </div>
+        <div class="md:w-1/4 flex space-x-4 items-center mt-3">
           <div class="flex items-baseline">
             <p>Filter by:</p>
             <!-- dropdown -->
             <div class="text-[14px] text-gray-400">
-              <button id="dropdownButton" data-dropdown-toggle="filter" class="px-3 py-1 flex items-center w-14 cursor-pointer">
+              <button id="filter-button" data-dropdown-toggle="filter" class="px-3 py-1 flex items-center w-14 cursor-pointer">
                 <span class="flex flex-col">All</span>
                 <svg class="w-4 h-4 ml-2 transition-transform duration-200" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                 </svg>
               </button>
-              <div id="filter" class="hidden divide-y divide-gray-100 rounded-lg shadow w-14">
+              <div id="filter" class="hidden divide-y divide-gray-100 rounded-lg shadow w-24 bg-secondary-dark">
                 <ul class="py-2">
-                  <li class="hover:bg-secondary-dark cursor-pointer">
-                    <p class="p-1">something</p>
+                  <li class="cursor-pointer text-gray-500 ">
+                    <p class="p-1 hover:bg-gray-700">something</p>
                   </li>
-                  <li class="hover:bg-secondary-dark cursor-pointer">
-                    <p class="p-1">something</p>
+                  <li class="cursor-pointer text-gray-500">
+                    <p class="p-1 hover:bg-gray-700">something</p>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-        </div>
-        <div>
-          <table>
-            <tr>
-              <th>S/N</th>
-              <th>Talent</th>
-              <th>Request Title</th>
-              <th>Status</th>
-              <th>Scheduled Date</th>
-              <th>Scheduled Time</th>
-              <th>Actions</th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>
-                <img src="" alt="">
-                <div>
-                  <p>Muhammed Adepoju</p>
-                  <p>Product Designer</p>
-                </div>
-              </td>
-              <td>Designer</td>
-              <td>
-                <button><span></span>Accepted</button>
-              </td>
-              <td>24 January 2023</td>
-              <td>09:00 - 09:30</td>
-              <td>
-                <button>Cancel</button>
-                <button>Reschedule</button>
-                <span></span>
-              </td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>
-                <img src="" alt="">
-                <div>
-                  <p>Solomon James</p>
-                  <p>Frontend Developer</p>
-                </div>
-              </td>
-              <td>Engineer</td>
-              <td>
-                <button><span></span>Completed</button>
-              </td>
-              <td>24 January 2023</td>
-              <td>09:00 - 09:30</td>
-              <td>
-                <button>Send Rejection</button>
-                <button>Make Offer</button>
-                <span></span>
-              </td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>
-                <img src="" alt="">
-                <div>
-                  <p>Janet Mike</p>
-                  <p>Data Analyst</p>
-                </div>
-              </td>
-              <td>Data Analyst</td>
-              <td>
-                <button><span></span>Rejected</button>
-              </td>
-              <td>24 January 2023</td>
-              <td>09:00 - 09:30</td>
-              <td>
-                <button>Send Rejection</button>
-                <button>Make Offer</button>
-                <span></span>
-              </td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>
-                <img src="" alt="">
-                <div>
-                  <p>Sarah Adigun</p>
-                  <p>Visual Designer</p>
-                </div>
-              </td>
-              <td>Designer</td>
-              <td>
-                <button><span></span>Pending</button>
-              </td>
-              <td>24 January 2023</td>
-              <td>09:00 - 09:30</td>
-              <td>
-                <button>Cancel</button>
-                <button>Reschedule</button>
-                <span></span>
-              </td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>
-                <img src="" alt="">
-                <div>
-                  <p>Ajanlekoko Mike</p>
-                  <p>Backend Engineer</p>
-                </div>
-              </td>
-              <td>Engineer</td>
-              <td>
-                <button><span></span>Cancelled</button>
-              </td>
-              <td>24 January 2023</td>
-              <td>09:00 - 09:30</td>
-              <td>
-                <button>Cancel</button>
-                <button>Reschedule</button>
-                <span></span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div>
-          <div class="flex items-baseline space-x-2">
-            <p>Page you are on</p>
-            <input type="text" id="pages" class="bg-secondary-gray border text-gray-400 text-sm rounded-sm focus:ring-0 focus:outline-none focus:border-gray-400 px-2.5 w-8 h-8" value="1">
-            <p>of 1</p>
-            <div>
-              <button><span></span></button>
-              <button><span></span></button>
-            </div>
-          </div>
-          <div class="flex items-baseline">
-            <p>Entries per page:</p>
-           <!-- dropdown -->
-            <div class="text-[14px] text-gray-400">
-              <button id="dropdownButton" data-dropdown-toggle="entries" class="px-3 py-1 flex items-center w-14 cursor-pointer">
-                <span class="flex flex-col">4</span>
-                <svg class="w-4 h-4 ml-2 transition-transform duration-200" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                </svg>
-              </button>
-              <div id="entries" class="hidden divide-y divide-gray-100 rounded-lg shadow w-14">
-                <ul class="py-2">
-                  <li class="hover:bg-secondary-dark cursor-pointer">
-                    <p class="p-1">5</p>
-                  </li>
-                  <li class="hover:bg-secondary-dark cursor-pointer">
-                    <p class="p-1">6</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div>
+            <button class="gold-button">Make a Request</button>
           </div>
         </div>
       </div>
+
+      <!-- table -->
+      <div class="mx-auto overflow-y-auto rounded-md border border-secondary-gray">
+        <table class="table-auto border-collapse text-left text-[14px] w-full">
+          <tr>
+            <th>S/N</th>
+            <th>Talent</th>
+            <th>Request Title</th>
+            <th>Status</th>
+            <th>Scheduled Date</th>
+            <th>Scheduled Time</th>
+            <th class="text-right">Actions</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td class="flex gap-2">
+              <div class="relative hidden xl:block">
+                <img src="https://randomuser.me/api/portraits/men/16.jpg" alt="" class="rounded-full w-10">
+                <div class="bg-primary-green rounded-full w-2.5 h-2.5 absolute bottom-0.5 right-1 z-10 border border-secondary-green"></div>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[14px] font-semibold">Muhammed Adepoju</span>
+                <span class="text-[12px]">Product Designer</span>
+              </div>
+            </td>
+            <td>Designer</td>
+            <td>
+              <button class="green-linear-btn space-x-1"><i class="fa-solid fa-circle-check"></i><span>Accepted</span></button>
+            </td>
+            <td>24 January 2023</td>
+            <td>09:00 - 09:30</td>
+            <td class="flex justify-end items-center">
+              <div class="md:flex gap-2 space-y-2">
+                <button class="cancel-btn">Cancel</button>
+                <button class="gold-accent-btn">Reschedule</button>
+              </div>
+              <span class="cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+              </svg>
+              </span>
+            </td>
+          </tr>
+          <!-- 2 -->
+          <tr>
+            <td>2</td>
+            <td class="flex gap-2">
+              <div class="relative hidden xl:block">
+                <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="" class="rounded-full w-10">
+                <div class="bg-primary-green rounded-full w-2.5 h-2.5 absolute bottom-0.5 right-1 z-10 border border-secondary-green"></div>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[14px] font-semibold">Solomon James</span>
+                <span class="text-[12px]">Frontend Developer</span>
+              </div>
+            </td>
+            <td>Engineer</td>
+            <td>
+              <button class="flex items-center green-linear-btn space-x-1">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                    <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                  </svg>
+                </span>
+                <span>Completed</span>
+              </button>
+            </td>
+            <td>24 January 2023</td>
+            <td>09:00 - 09:30</td>
+            <td class="flex justify-end items-center">
+              <div class="md:flex gap-2 space-y-2">
+                <button class="cancel-btn">Send Rejection</button>
+                <button class="green-btn">Make Offer</button>
+              </div>
+              <span class="cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+              </svg>
+              </span>
+            </td>
+          </tr>
+          <!-- 3 -->
+          <tr>
+            <td>3</td>
+            <td class="flex gap-2">
+            <div class="relative hidden xl:block">
+                <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="" class="rounded-full w-10 ">
+                <div class="bg-primary-green rounded-full w-2.5 h-2.5 absolute bottom-0.5 right-1 z-10 border border-secondary-green"></div>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[14px] font-semibold">Janet Mike</span>
+                <span class="text-[12px]">Data Analyst</span>
+              </div>
+            </td>
+            <td>Data Analyst</td>
+            <td>
+              <button class="cancel-linear-btn space-x-1"><i class="fa-solid fa-circle-xmark"></i><span>Rejected</span></button>
+            </td>
+            <td>24 January 2023</td>
+            <td>09:00 - 09:30</td>
+            <td class="flex justify-end items-center">
+              <div class="md:flex gap-2 space-y-2">
+                <button class="greyed-btn">Send Rejection</button>
+                <button class="greyed-btn">Make Offer</button>
+              </div>
+              <span class="cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+              </svg>
+              </span>
+            </td>
+          </tr>
+          <!-- 4 -->
+          <tr>
+            <td>4</td>
+            <td class="flex gap-2">
+              <div class="relative hidden xl:block">
+                <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="" class="rounded-full w-10 ">
+                <div class="bg-primary-green rounded-full w-2.5 h-2.5 absolute bottom-0.5 right-1 z-10 border border-secondary-green"></div>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[14px] font-semibold">Sarah Adigun</span>
+                <span class="text-[12px]">Visual Designer</span>
+              </div>
+            </td>
+            <td>Designer</td>
+            <td>
+              <button class="gold-linear-btn space-x-1"><i class="fa-solid fa-clock"></i><span>Pending</span></button>
+            </td>
+            <td>24 January 2023</td>
+            <td>09:00 - 09:30</td>
+            <td class="flex justify-end items-center">
+              <div class="md:flex gap-2 space-y-2">
+                <button class="cancel-btn">Cancel</button>
+                <button class="gold-accent-btn">Reschedule</button>
+              </div>
+              <span class="cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                </svg>
+              </span>
+            </td>
+          </tr>
+          <!-- 5 -->
+          <tr>
+            <td>5</td>
+            <td class="flex gap-2">
+              <div class="relative hidden xl:block">
+                <img src="https://randomuser.me/api/portraits/men/13.jpg" alt="" class="rounded-full w-10 ">
+                <div class="bg-primary-green rounded-full w-2.5 h-2.5 absolute bottom-0.5 right-1 z-10 border border-secondary-green"></div>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[14px] font-semibold">Ajanlekoko Mike</span>
+                <span class="text-[12px]">Backend Engineer</span>
+              </div>
+            </td>
+            <td>Engineer</td>
+            <td>
+              <button class="cancel-linear-btn space-x-1"><i class="fa-solid fa-circle-xmark"></i><span>Cancelled</span></button>
+            </td>
+            <td>24 January 2023</td>
+            <td>09:00 - 09:30</td>
+            <td class="flex justify-end items-center ">
+              <div class="md:flex gap-2 space-y-2">
+                <button class="greyed-btn">Cancel</button>
+                <button class="greyed-btn">Reschedule</button>
+              </div>
+              <span class="cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                </svg>
+              </span>
+            </td>
+          </tr>
+        </table>
+      </div>
+      
+      <!-- pagination -->
+      <div class="flex mx-auto md:flex-row flex-col space-y-2 justify-between text-[14px]">
+        <div class="flex items-center space-x-3">
+          <p>Page you are on</p>
+          <input type="text" id="pages" class="bg-secondary-gray border text-gray-400 text-sm rounded-sm focus:ring-0 focus:outline-none focus:border-gray-400 px-2.5 w-8 h-8" value="1">
+          <p>of 1</p>
+          <div class="-space-x-1">
+            <button class="bg-secondary-gray py-1 px-1.5"><a href="#"><i class="fa-solid fa-chevron-left text-gray-500"></i></a></button>
+            <button class="bg-stone-500 py-1 px-1.5"><a href="#"><i class="fa-solid fa-chevron-right text-gray-200"></i></a></button>
+          </div>
+        </div>
+        <div class="flex">
+          <span>Entries per page:</span>
+          <!-- dropdown -->
+          <div class="text-[14px] text-gray-400">
+            <button id="entries-button" data-dropdown-toggle="entries" class="px-3 py-1 flex items-center w-14 cursor-pointer">
+              <span class="flex flex-col">4</span>
+              <svg class="w-4 h-4 ml-2 transition-transform duration-200" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div id="entries" class="hidden divide-y divide-gray-100 rounded-lg shadow w-14">
+              <ul class="py-2">
+                <li class="hover:bg-gray-700 cursor-pointer">
+                  <p class="p-1">5</p>
+                </li>
+                <li class="hover:bg-gray-700 cursor-pointer">
+                  <p class="p-1">6</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>  
+      </div>
     </div>
   </section>
-
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.js"></script>
 </body>

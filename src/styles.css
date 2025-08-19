@@ -12,9 +12,11 @@
   /* --color-primary-gray: #444444; */
   --color-search-bar: #2d2d2d;
   --color-gold-accent: #e0b831;
+  --color-secondary-gold: #5e4f25;
   --color-primary-red: #7e1522;
+  --color-secondary-red: #521e2a;
   --color-primary-green: #8fe33b;
-  --color-secondary-green: #3b5027;
+  --color-secondary-green: #3b5035;
 }
 
 body {
@@ -71,11 +73,35 @@ p {
 }
 
 .gold-accent-btn {
-  @apply px-2 py-1 bg-main-dark text-gold-accent border border-gold-accent rounded-md hover:bg-gold-accent hover:text-main-dark cursor-pointer transition duration-200;
+  @apply px-2 py-1 bg-main-dark text-gold-accent border border-gold-accent rounded-md hover:bg-gold-accent hover:text-main-dark cursor-pointer transition duration-200 font-bold;
+}
+
+.cancel-btn {
+  @apply px-2 py-1 bg-primary-red text-gray-200 rounded-md hover:bg-red-800 cursor-pointer font-bold;
+}
+
+.greyed-btn {
+  @apply px-2 py-1 bg-secondary-gray text-gray-500 rounded-md cursor-pointer hover:bg-primary-gray font-bold;
+}
+
+.green-btn {
+  @apply px-2 py-1 bg-secondary-green text-gray-200 rounded-md hover:bg-green-800 cursor-pointer font-bold;
+}
+
+.gold-linear-btn {
+  @apply px-2 py-1 rounded-sm cursor-pointer border border-gold-accent hover:border-gray-200 text-gray-200 bg-linear-to-r from-secondary-gold to-primary-gray;
+}
+
+.cancel-linear-btn {
+  @apply px-2 py-1 rounded-sm cursor-pointer border border-primary-red hover:border-gray-200 text-gray-200 bg-linear-to-r from-secondary-red to-secondary-gray;
+}
+
+.green-linear-btn {
+  @apply px-2 py-1 rounded-sm cursor-pointer border border-primary-green hover:border-gray-200 text-gray-200 bg-linear-to-r from-secondary-green to-secondary-gray;
 }
 
 td {
-  @apply p-2;
+  @apply px-2 py-1;
 }
 
 th {
