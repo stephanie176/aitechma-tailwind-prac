@@ -1225,6 +1225,9 @@
   .w-auto {
     width: auto;
   }
+  .w-dvw {
+    width: 100dvw;
+  }
   .w-full {
     width: 100%;
   }
@@ -1245,6 +1248,9 @@
   }
   .max-w-\[15px\] {
     max-width: 15px;
+  }
+  .max-w-dvw {
+    max-width: 100dvw;
   }
   .max-w-full {
     max-width: 100%;
