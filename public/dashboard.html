@@ -10,37 +10,37 @@
 <body class="bg-main-dark relative flex text-gray-400">
   <!-- side nav bar -->
   <div class="hidden md:block">
-  <aside class="bg-secondary-dark h-dvh p-2 pt-16 flex flex-col justify-between"> 
-    <!-- main nav -->
-    <nav>
-      <ul class="space-y-4">
-        <li><a href="dashboard.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-          <i class="fa-solid fa-grip text-gold-accent"></i>
-        </div><span class="text-[10px]">Home</span></a></li>
-        <li><a href="requests.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-          <i class="fa-solid fa-file-arrow-down"></i>
-        </div><span class="text-[10px]">Requests</span></a></li>
-        <li><a href="interviews.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-          <i class="fa-solid fa-comment"></i>
-        </div><span class="text-[10px]">Interviews</span></a></li>
-        <li><a href="#" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-          <i class="fa-solid fa-envelopes-bulk">
-        </div></i><span class="text-[10px]">Offers</span></a></li>
-        <li><a href="#" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-          <i class="fa-solid fa-calendar"></i>
-        </div><span class="text-[10px]">Bills</span></a></li>
-      </ul>
-    </nav>
-    <!-- lower nav -->
-    <div class="text-gray-400 flex flex-col items-center space-y-4">
-      <a href="#"><span><i class="fa-solid fa-gear text-[18px]"></i></span></a>
-      <a href="#"><span><i class="fa-solid fa-circle-question text-[18px]"></i></span></a>
-    </div>
-  </aside>
+    <aside class="bg-secondary-dark h-dvh p-2 pt-16 flex flex-col justify-between aside"> 
+      <!-- main nav -->
+      <nav>
+        <ul class="space-y-4">
+          <li><a href="dashboard.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+            <i class="fa-solid fa-grip text-gold-accent"></i>
+          </div><span class="text-[10px]">Home</span></a></li>
+          <li><a href="requests.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+            <i class="fa-solid fa-file-arrow-down"></i>
+          </div><span class="text-[10px]">Requests</span></a></li>
+          <li><a href="interviews.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+            <i class="fa-solid fa-comment"></i>
+          </div><span class="text-[10px]">Interviews</span></a></li>
+          <li><a href="#" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+            <i class="fa-solid fa-envelopes-bulk">
+          </div></i><span class="text-[10px]">Offers</span></a></li>
+          <li><a href="#" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+            <i class="fa-solid fa-calendar"></i>
+          </div><span class="text-[10px]">Bills</span></a></li>
+        </ul>
+      </nav>
+      <!-- lower nav -->
+      <div class="text-gray-400 flex flex-col items-center space-y-4">
+        <a href="#"><span><i class="fa-solid fa-gear text-[18px]"></i></span></a>
+        <a href="#"><span><i class="fa-solid fa-circle-question text-[18px]"></i></span></a>
+      </div>
+    </aside>
   </div>
 
   <!-- main section -->
-  <section class="w-full">
+  <section class="w-full md:ms-[60px]">
     <!-- head nav -->
     <div class="bg-secondary-dark flex justify-between">
       <a href="dashboard.html"><img src="images/logo.png" alt=""></a>
@@ -74,26 +74,28 @@
     </div>
 
     <!-- nav nav -->
-    <div class="bg-secondary-dark p-2 flex md:hidden"> 
+    <div class="bg-secondary-dark p-2 px-5 md:hidden"> 
       <!-- main nav -->
-      <nav class="grid grid-cols-2 mx-auto">
-        <ul class="flex space-x-3">
-          <li><a href="dashboard.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-            <i class="fa-solid fa-grip text-gold-accent"></i>
-          </div><span class="text-[10px]">Home</span></a></li>
-          <li><a href="requests.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-            <i class="fa-solid fa-file-arrow-down"></i>
-          </div><span class="text-[10px]">Requests</span></a></li>
-          <li><a href="interviews.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-            <i class="fa-solid fa-comment"></i>
-          </div><span class="text-[10px]">Interviews</span></a></li>
-          <li><a href="#" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-            <i class="fa-solid fa-envelopes-bulk">
-          </div></i><span class="text-[10px]">Offers</span></a></li>
-          <li><a href="#" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
-            <i class="fa-solid fa-calendar"></i>
-          </div><span class="text-[10px]">Bills</span></a></li>
-        </ul>
+      <div class="grid grid-cols-2 w-full">
+        <nav>
+          <ul class="flex space-x-3">
+            <li><a href="dashboard.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+              <i class="fa-solid fa-grip text-gold-accent"></i>
+            </div><span class="text-[10px]">Home</span></a></li>
+            <li><a href="requests.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+              <i class="fa-solid fa-file-arrow-down"></i>
+            </div><span class="text-[10px]">Requests</span></a></li>
+            <li><a href="interviews.html" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+              <i class="fa-solid fa-comment"></i>
+            </div><span class="text-[10px]">Interviews</span></a></li>
+            <li><a href="#" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+              <i class="fa-solid fa-envelopes-bulk">
+            </div></i><span class="text-[10px]">Offers</span></a></li>
+            <li><a href="#" class="text-gray-400 flex flex-col items-center space-y-1"><div class="bg-primary-gray p-1 rounded-sm">
+              <i class="fa-solid fa-calendar"></i>
+            </div><span class="text-[10px]">Bills</span></a></li>
+          </ul>
+        </nav>
         <!-- lower nav -->
         <div class="text-gray-400 flex items-center space-x-2 justify-end">
           <a href="#" class="flex flex-col space-y-1 items-center">
@@ -109,7 +111,7 @@
             <span class="md:hidden text-[10px]">Questions</span>
           </a>
         </div>
-      </nav>
+      </div>
     </div>
 
     <!-- main content -->
@@ -196,7 +198,7 @@
               </div>
               <p>Pay schedule: <span class="font-semibold text-gray-200">Weekly</span></p>
               <p>Pay range: <span class="font-semibold text-gray-200">$7,000</span></p>
-              <div class="flex gap-2 text-stone-300 font-semibold">
+              <div class="flex flex-wrap gap-2 text-stone-300 font-semibold">
                 <p class="pill">Figma</p>
                 <p class="pill">Adobe XD</p>
                 <p class="pill">Illustrator</p>
@@ -221,7 +223,7 @@
               </div>
               <p>Pay schedule: <span class="font-semibold text-gray-200">Weekly</span></p>
               <p>Pay range: <span class="font-semibold text-gray-200">$7,000</span></p>
-              <div class="flex gap-2 text-stone-300 font-semibold">
+              <div class="flex flex-wrap gap-2 text-stone-300 font-semibold">
                 <p class="pill">Figma</p>
                 <p class="pill">Adobe XD</p>
                 <p class="pill">Illustrator</p>
@@ -246,7 +248,7 @@
               </div>
               <p>Pay schedule: <span class="font-semibold text-gray-200">Weekly</span></p>
               <p>Pay range: <span class="font-semibold text-gray-200">$7,000</span></p>
-              <div class="flex gap-2 text-stone-300 font-semibold">
+              <div class="flex flex-wrap gap-2 text-stone-300 font-semibold">
                 <p class="pill">Figma</p>
                 <p class="pill">Adobe XD</p>
                 <p class="pill">Illustrator</p>
