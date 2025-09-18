@@ -739,12 +739,6 @@
   .z-50 {
     z-index: 50;
   }
-  .col-1 {
-    grid-column: 1;
-  }
-  .col-11 {
-    grid-column: 11;
-  }
   .col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -1227,9 +1221,6 @@
   }
   .w-96 {
     width: calc(var(--spacing) * 96);
-  }
-  .w-100 {
-    width: calc(var(--spacing) * 100);
   }
   .w-auto {
     width: auto;
@@ -2723,6 +2714,9 @@
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
   }
+  .pr-6 {
+    padding-right: calc(var(--spacing) * 6);
+  }
   .pb-0 {
     padding-bottom: calc(var(--spacing) * 0);
   }
@@ -2767,6 +2761,9 @@
   }
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
+  }
+  .pl-6 {
+    padding-left: calc(var(--spacing) * 6);
   }
   .pl-8 {
     padding-left: calc(var(--spacing) * 8);
@@ -3427,14 +3424,34 @@
       outline-style: none;
     }
   }
-  .md\:col-span-1 {
+  .md\:ms-\[2\.8rem\] {
     @media (width >= 48rem) {
-      grid-column: span 1 / span 1;
+      margin-inline-start: 2.8rem;
+    }
+  }
+  .md\:ms-\[3rem\] {
+    @media (width >= 48rem) {
+      margin-inline-start: 3rem;
+    }
+  }
+  .md\:ms-\[4rem\] {
+    @media (width >= 48rem) {
+      margin-inline-start: 4rem;
+    }
+  }
+  .md\:ms-\[7rem\] {
+    @media (width >= 48rem) {
+      margin-inline-start: 7rem;
     }
   }
   .md\:ms-\[60px\] {
     @media (width >= 48rem) {
       margin-inline-start: 60px;
+    }
+  }
+  .md\:ms-\[85px\] {
+    @media (width >= 48rem) {
+      margin-inline-start: 85px;
     }
   }
   .md\:mt-2 {
