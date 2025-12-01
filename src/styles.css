@@ -40,7 +40,7 @@ input[type='checkbox'] {
 }
 
 .signin-btn {
-  @apply w-full rounded-sm py-3 cursor-pointer hover:bg-secondary-blue bg-primary-blue text-white ;
+  @apply w-full rounded-sm py-3 cursor-pointer hover:bg-secondary-blue bg-primary-blue text-white transition duration-300;
 }
 
 .card {
