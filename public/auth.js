@@ -60,31 +60,33 @@ function forgotPassword(event) {
 
 // reset password function
 function resetPassword(event) {
-    stopReload(event);
+  stopReload(event);
 
-    const newPass = document.getElementById("reset-password").value.trim();
+  const newPass = document.getElementById("reset-password").value.trim();
 
-    if (!newPass) {
-        alert("Enter a new password");
-        return;
-    }
+  if (!newPass) {
+      alert("Enter a new password");
+      return;
+  }
 
-    localStorage.setItem("userPassword", newPass);
+  localStorage.setItem("userPassword", newPass);
 
-    alert("Password reset successful!");
-    window.location.href = "login.html";
+  alert("Password reset successful!");
+  window.location.href = "login.html";
 }
 
 // dashboard access protection
-if (window.location.pathname.includes("dashboard.html")) {
-    localStorage.setItem("isLoggedIn", "true");
-    setTimeout(() => {
-        window.location.href = "dashboard.html";
-    }, 200); 
-}
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.location.pathname.includes("dashboard.html")) {
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+    if (isLoggedIn !== "true") {
+      window.location.href = "login.html";
+    }
+  }
+});
 
 // logout function
 function logout() {
-    localStorage.setItem("isLoggedIn", "false");
-    window.location.href = "login.html";
+  localStorage.setItem("isLoggedIn", "false");
+  window.location.href = "login.html";
 }
