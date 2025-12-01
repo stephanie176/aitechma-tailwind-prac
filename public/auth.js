@@ -1,43 +1,47 @@
 /* Prevent page reload when clicking buttons inside forms */
 function stopReload(event) {
-    if (event) event.preventDefault();
+  if (event) event.preventDefault();
 }
 
 // signup funtion
 function signup(event) {
-    stopReload(event);
+  stopReload(event);
 
-    const email = document.getElementById("signup-email").value.trim();
-    const password = document.getElementById("signup-password").value.trim();
+  const email = document.getElementById("signup-email").value.trim();
+  const password = document.getElementById("signup-password").value.trim();
 
-    if (!email || !password) {
-        alert("Please fill all fields");
-        return;
-    }
+  if (!email || !password) {
+      alert("Please fill all fields");
+      return;
+  }
 
-    localStorage.setItem("userEmail", email);
-    localStorage.setItem("userPassword", password);
-    localStorage.setItem("isLoggedIn", "true");
+  localStorage.setItem("userEmail", email);
+  localStorage.setItem("userPassword", password);
+  localStorage.setItem("isLoggedIn", "true");
 
+  setTimeout(() => {
     window.location.href = "dashboard.html";
+  }, 200);
 }
 
 // login function
 function login(event) {
-    stopReload(event);
+  stopReload(event);
 
-    const email = document.getElementById("login-email").value.trim();
-    const password = document.getElementById("login-password").value.trim();
+  const email = document.getElementById("login-email").value.trim();
+  const password = document.getElementById("login-password").value.trim();
 
-    const storedEmail = localStorage.getItem("userEmail");
-    const storedPassword = localStorage.getItem("userPassword");
+  const storedEmail = localStorage.getItem("userEmail");
+  const storedPassword = localStorage.getItem("userPassword");
 
-    if (email === storedEmail && password === storedPassword) {
-        localStorage.setItem("isLoggedIn", "true");
+  if (email === storedEmail && password === storedPassword) {
+      localStorage.setItem("isLoggedIn", "true");
+      setTimeout(() => {
         window.location.href = "dashboard.html";
-    } else {
-        alert("Incorrect email or password");
-    }
+      }, 200);
+  } else {
+      alert("Incorrect email or password");
+  }
 }
 
 // forgot password function
@@ -73,14 +77,13 @@ function resetPassword(event) {
 
 // dashboard access protection
 if (window.location.pathname.includes("dashboard.html")) {
-    if (localStorage.getItem("isLoggedIn") !== "true") {
-        window.location.href = "login.html";
-    }
+    localStorage.setItem("isLoggedIn", "true");
+    setTimeout(() => {
+        window.location.href = "dashboard.html";
+    }, 200); 
 }
 
-/* --------------------------------
-   LOGOUT FUNCTION (dashboard.html)
--------------------------------- */
+// logout function
 function logout() {
     localStorage.setItem("isLoggedIn", "false");
     window.location.href = "login.html";
